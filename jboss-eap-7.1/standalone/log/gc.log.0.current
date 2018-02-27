@@ -538,3 +538,4 @@ CommandLine flags: -XX:GCLogFileSize=3145728 -XX:InitialHeapSize=1366294528 -XX:
 2018-02-27T16:23:14.137-0500: 455495.519: [GC (Allocation Failure) [PSYoungGen: 444096K->160K(444416K)] 678638K->234702K(1334784K), 0.0088563 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
 2018-02-27T16:39:26.237-0500: 456467.618: [GC (Allocation Failure) [PSYoungGen: 444064K->128K(444416K)] 678606K->234670K(1334784K), 0.0091646 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
 2018-02-27T16:55:44.345-0500: 457445.727: [GC (Allocation Failure) [PSYoungGen: 444032K->160K(444416K)] 678574K->234702K(1334784K), 0.0077401 secs] [Times: user=0.03 sys=0.00, real=0.00 secs] 
+2018-02-27T17:12:36.280-0500: 458457.662: [GC (Allocation Failure) [PSYoungGen: 444064K->192K(444416K)] 678606K->234734K(1334784K), 0.0098763 secs] [Times: user=0.03 sys=0.00, real=0.01 secs] 
