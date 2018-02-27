@@ -1,0 +1,774 @@
+2018-02-22 09:51:39,173 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.0.Final-redhat-1
+2018-02-22 09:51:39,599 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1-redhat-1
+2018-02-22 09:51:39,738 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) starting
+2018-02-22 09:51:39,739 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss-eap-7.1//jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /opt/jboss-eap-7.1
+	jboss.host.name = jon
+	jboss.modules.dir = /opt/jboss-eap-7.1/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jon
+	jboss.qualified.host.name = jon.skillnet.local
+	jboss.server.base.dir = /opt/jboss-eap-7.1/standalone
+	jboss.server.config.dir = /opt/jboss-eap-7.1/standalone/configuration
+	jboss.server.data.dir = /opt/jboss-eap-7.1/standalone/data
+	jboss.server.deploy.dir = /opt/jboss-eap-7.1/standalone/data/content
+	jboss.server.log.dir = /opt/jboss-eap-7.1/standalone/log
+	jboss.server.name = jon
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss-eap-7.1/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss-eap-7.1//standalone/configuration/logging.properties
+	module.path = /opt/jboss-eap-7.1//modules
+	org.jboss.boot.log.file = /opt/jboss-eap-7.1//standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss-eap-7.1//jboss-modules.jar -mp /opt/jboss-eap-7.1//modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss-eap-7.1/ -Djboss.server.base.dir=/opt/jboss-eap-7.1//standalone -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss-eap-7.1
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = America/New_York
+2018-02-22 09:51:39,740 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/opt/jboss-eap-7.1//standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/opt/jboss-eap-7.1//standalone/log/server.log -Dlogging.configuration=file:/opt/jboss-eap-7.1//standalone/configuration/logging.properties 
+2018-02-22 09:51:41,189 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-02-22 09:51:41,214 INFO  [org.wildfly.security] (ServerService Thread Pool -- 12) ELY00001: WildFly Elytron version 1.1.7.Final-redhat-1
+2018-02-22 09:51:41,217 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-02-22 09:51:41,252 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0015: Re-attempting failed deployment GUIAuthorization.war
+2018-02-22 09:51:41,507 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 4) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e/content
+2018-02-22 09:51:41,534 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2018-02-22 09:51:41,564 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.5.4.Final-redhat-1
+2018-02-22 09:51:41,570 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.5.4.Final-redhat-1
+2018-02-22 09:51:41,623 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2018-02-22 09:51:41,623 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2018-02-22 09:51:41,630 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-02-22 09:51:41,634 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2018-02-22 09:51:41,647 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final-redhat-1
+2018-02-22 09:51:41,648 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-02-22 09:51:41,649 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2018-02-22 09:51:41,665 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=5.0.2.Final-redhat-1
+2018-02-22 09:51:41,674 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-02-22 09:51:41,684 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 5.0.5.Final-redhat-1
+2018-02-22 09:51:41,716 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final-redhat-1)
+2018-02-22 09:51:41,767 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.18.Final-redhat-2 starting
+2018-02-22 09:51:41,777 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-02-22 09:51:41,779 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2018-02-22 09:51:41,780 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-7) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-02-22 09:51:41,781 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-02-22 09:51:41,939 INFO  [org.jboss.as.ejb3] (MSC service thread 1-1) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2018-02-22 09:51:41,941 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2018-02-22 09:51:42,053 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/opt/jboss-eap-7.1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-02-22 09:51:42,071 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2018-02-22 09:51:42,073 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2018-02-22 09:51:42,170 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on 172.18.48.29:8280
+2018-02-22 09:51:42,196 INFO  [org.jboss.as.ejb3] (MSC service thread 1-6) WFLYEJB0493: EJB subsystem suspension complete
+2018-02-22 09:51:42,282 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-02-22 09:51:42,328 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2018-02-22 09:51:42,342 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss-eap-7.1/standalone/deployments
+2018-02-22 09:51:42,348 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /opt/jboss-eap-7.1/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-02-22 09:51:42,367 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 09:51:42,368 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "PruebaEAR.ear" (runtime-name: "PruebaEAR.ear")
+2018-02-22 09:51:42,385 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTPS listener https listening on 172.18.48.29:8643
+2018-02-22 09:51:42,461 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "Prueba.war")
+2018-02-22 09:51:42,594 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBossWS 5.1.9.Final-redhat-1 (Apache CXF 3.1.12.redhat-1) 
+2018-02-22 09:51:43,424 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-7) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final-redhat-1
+2018-02-22 09:51:43,916 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-8) JBWS024061: Adding service endpoint metadata: id=Hello
+ address=http://localhost:8280/Prueba/Hello
+ implementor=com.skillnet.Hello
+ serviceName={http://skillnet.com/}HelloService
+ portName={http://skillnet.com/}HelloPort
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-22 09:51:44,098 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2018-02-22 09:51:44,672 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-22 09:51:44,812 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-8) Creating Service {http://skillnet.com/}HelloService from class com.skillnet.Hello
+2018-02-22 09:51:45,137 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-8) Setting the server's publish address to be http://localhost:8280/Prueba/Hello
+2018-02-22 09:51:45,199 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-8) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/PruebaEAR.ear/Prueba.war/HelloService.wsdl
+2018-02-22 09:51:45,251 INFO  [org.jboss.as.webservices] (MSC service thread 1-8) WFLYWS0003: Starting service jboss.ws.endpoint."PruebaEAR.ear"."Prueba.war".Hello
+2018-02-22 09:51:45,431 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 66) WFLYUT0021: Registered web context: '/Prueba' for server 'default-server'
+2018-02-22 09:51:45,437 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-22 09:51:45,444 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "PruebaEAR.ear" (runtime-name : "PruebaEAR.ear")
+2018-02-22 09:51:45,446 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 37) WFLYSRV0010: Deployed "GUIAuthorization.war" (runtime-name : "GUIAuthorization.war")
+2018-02-22 09:51:45,451 INFO  [org.jboss.as.controller] (Controller Boot Thread) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-22 09:51:45,578 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-02-22 09:51:45,580 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://172.18.48.29:10190/management
+2018-02-22 09:51:45,580 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://172.18.48.29:10190
+2018-02-22 09:51:45,580 ERROR [org.jboss.as] (Controller Boot Thread) WFLYSRV0026: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) started (with errors) in 6888ms - Started 436 of 666 services (1 services failed or missing dependencies, 356 services are lazy, passive or on-demand)
+2018-02-22 09:52:10,815 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 44ms
+2018-02-22 09:52:10,855 INFO  [org.jboss.as.server] (External Management Request Threads -- 6) WFLYSRV0009: Undeployed "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 09:52:10,864 INFO  [org.jboss.as.repository] (External Management Request Threads -- 6) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e/content
+2018-02-22 09:53:38,451 INFO  [org.jboss.as.repository] (External Management Request Threads -- 8) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/18/e0c1dd01b54a23e5705d817d11eccb2ba56cd9/content
+2018-02-22 09:53:38,454 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 09:53:38,864 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-22 09:53:38,865 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 8) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-22 09:53:38,866 ERROR [org.jboss.as.server] (External Management Request Threads -- 8) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-22 09:53:38,891 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 25ms
+2018-02-22 09:54:47,033 INFO  [org.jboss.as.repository] (External Management Request Threads -- 9) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d/content
+2018-02-22 09:54:47,035 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 09:54:47,563 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-22 09:54:48,066 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-22 09:54:48,321 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.3.5.Final-redhat-2
+2018-02-22 09:54:48,407 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-22 09:54:48,408 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-22 09:54:48,409 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-22 09:54:48,409 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-22 09:54:48,409 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-22 09:54:48,409 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-22 09:54:48,409 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-22 09:54:48,410 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-22 09:54:48,410 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-22 09:54:48,786 INFO  [org.jboss.weld.Version] (MSC service thread 1-4) WELD-000900: 2.4.3 (redhat)
+2018-02-22 09:54:48,802 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-4) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-22 09:54:48,816 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-4) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-22 09:54:48,906 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-4) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-22 09:54:48,958 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-4) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-22 09:54:48,988 INFO  [org.jboss.as.webservices] (MSC service thread 1-6) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 09:54:49,131 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 9) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 09:54:49,131 ERROR [org.jboss.as.server] (External Management Request Threads -- 9) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 09:54:49,143 INFO  [org.jboss.as.webservices] (MSC service thread 1-7) WFLYWS0004: Stopping service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 09:54:49,260 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 128ms
+2018-02-22 10:00:21,846 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 10:00:22,317 INFO  [org.jboss.as.jpa] (MSC service thread 1-5) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-22 10:00:22,464 INFO  [org.jboss.weld.deployer] (MSC service thread 1-2) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-22 10:00:22,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-22 10:00:22,471 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-22 10:00:22,472 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-22 10:00:22,472 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-22 10:00:22,472 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-22 10:00:22,472 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-22 10:00:22,473 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-22 10:00:22,473 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-22 10:00:22,473 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-2) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-22 10:00:22,623 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-7) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-22 10:00:22,633 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-7) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-22 10:00:22,682 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-7) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-22 10:00:22,709 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-7) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-22 10:00:22,732 INFO  [org.jboss.as.webservices] (MSC service thread 1-4) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 10:00:22,755 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 10) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 10:00:22,756 ERROR [org.jboss.as.server] (External Management Request Threads -- 10) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 10:00:22,759 INFO  [org.jboss.as.webservices] (MSC service thread 1-6) WFLYWS0004: Stopping service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 10:00:22,799 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 42ms
+2018-02-22 10:01:40,127 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/18/e0c1dd01b54a23e5705d817d11eccb2ba56cd9 is obsolete and will be removed
+2018-02-22 10:01:40,131 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/18/e0c1dd01b54a23e5705d817d11eccb2ba56cd9/content
+2018-02-22 10:01:40,131 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d is obsolete and will be removed
+2018-02-22 10:01:40,133 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d/content
+2018-02-22 14:13:43,399 INFO  [org.jboss.as.repository] (External Management Request Threads -- 6) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d/content
+2018-02-22 14:13:43,402 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 14:13:43,827 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-22 14:13:43,968 INFO  [org.jboss.weld.deployer] (MSC service thread 1-8) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-22 14:13:43,976 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-22 14:13:43,976 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-22 14:13:43,976 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-22 14:13:43,977 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-22 14:13:43,977 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-22 14:13:43,977 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-22 14:13:43,977 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-22 14:13:43,977 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-22 14:13:43,977 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-8) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-22 14:13:44,114 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-8) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-22 14:13:44,123 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-8) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-22 14:13:44,165 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-8) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-22 14:13:44,182 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-8) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-22 14:13:44,202 INFO  [org.jboss.as.webservices] (MSC service thread 1-7) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 14:13:44,225 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 6) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 14:13:44,226 ERROR [org.jboss.as.server] (External Management Request Threads -- 6) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 14:13:44,233 INFO  [org.jboss.as.webservices] (MSC service thread 1-8) WFLYWS0004: Stopping service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 14:13:44,270 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 39ms
+2018-02-22 14:14:58,609 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 14:14:59,026 INFO  [org.jboss.as.jpa] (MSC service thread 1-3) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-22 14:14:59,146 INFO  [org.jboss.weld.deployer] (MSC service thread 1-3) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-22 14:14:59,152 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-22 14:14:59,152 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-22 14:14:59,153 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-3) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-22 14:14:59,271 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-6) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-22 14:14:59,280 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-6) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-22 14:14:59,316 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-6) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-22 14:14:59,330 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-6) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-22 14:14:59,349 INFO  [org.jboss.as.webservices] (MSC service thread 1-6) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 14:14:59,364 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 7) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 14:14:59,365 ERROR [org.jboss.as.server] (External Management Request Threads -- 7) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 14:14:59,368 INFO  [org.jboss.as.webservices] (MSC service thread 1-3) WFLYWS0004: Stopping service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 14:14:59,402 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 37ms
+2018-02-22 14:15:17,587 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-22 14:15:18,003 INFO  [org.jboss.as.jpa] (MSC service thread 1-8) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-22 14:15:18,133 INFO  [org.jboss.weld.deployer] (MSC service thread 1-5) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-22 14:15:18,138 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-22 14:15:18,139 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-22 14:15:18,139 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-22 14:15:18,139 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-22 14:15:18,139 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-22 14:15:18,139 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-22 14:15:18,139 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-22 14:15:18,140 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-22 14:15:18,140 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-5) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-22 14:15:18,244 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-5) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-22 14:15:18,252 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-5) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-22 14:15:18,285 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-5) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-22 14:15:18,298 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-5) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-22 14:15:18,315 INFO  [org.jboss.as.webservices] (MSC service thread 1-6) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 14:15:18,330 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 8) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 14:15:18,331 ERROR [org.jboss.as.server] (External Management Request Threads -- 8) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-22 14:15:18,347 INFO  [org.jboss.as.webservices] (MSC service thread 1-1) WFLYWS0004: Stopping service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-22 14:15:18,378 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 46ms
+2018-02-22 14:16:40,167 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 68) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d is obsolete and will be removed
+2018-02-22 14:16:40,170 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 68) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d/content

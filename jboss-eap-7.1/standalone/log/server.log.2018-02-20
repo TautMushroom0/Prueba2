@@ -1,0 +1,565 @@
+2018-02-20 10:01:17,482 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization-0.0.1-SNAPSHOT.war. Deployment changes will not be processed until all content is complete.
+2018-02-20 10:02:59,002 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0021: Deployment content /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization-0.0.1-SNAPSHOT.war appears to be incomplete and is not progressing toward completion. This content cannot be auto-deployed.
+2018-02-20 10:02:59,003 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0014: Scan found content configured for auto-deploy that could not be safely auto-deployed. See details above. Deployment changes will not be processed until all problematic content is either removed or whether to deploy the content or not is indicated via a .dodeploy or .skipdeploy marker file. Problematic deployments are [GUIAuthorization-0.0.1-SNAPSHOT.war]
+2018-02-20 10:02:59,015 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0002: Cannot remove extraneous deployment marker file GUIAuthorization-0.0.1-SNAPSHOT.war.pending
+2018-02-20 10:04:27,565 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization-0.0.1-SNAPSHOT.war. Deployment changes will not be processed until all content is complete.
+2018-02-20 10:04:29,819 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/03/eec44287a9e37342b4f0a80243b507a35d7003/content
+2018-02-20 10:04:29,851 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "GUIAuthorization-0.0.1-SNAPSHOT.war" (runtime-name: "GUIAuthorization-0.0.1-SNAPSHOT.war")
+2018-02-20 10:04:31,845 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0003: Could not index class module-info.class at /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/javax.json.bind-api-1.0.jar: java.lang.IllegalStateException: Unknown tag! pos=4 poolCount = 28
+	at org.jboss.jandex.Indexer.processConstantPool(Indexer.java:1417)
+	at org.jboss.jandex.Indexer.index(Indexer.java:1451)
+	at org.jboss.as.server.deployment.annotation.ResourceRootIndexer.indexResourceRoot(ResourceRootIndexer.java:99)
+	at org.jboss.as.server.deployment.annotation.AnnotationIndexProcessor.deploy(AnnotationIndexProcessor.java:51)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:33,601 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry xml-apis.jar in /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/serializer-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-20 10:04:33,603 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry xercesImpl.jar in /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-20 10:04:33,603 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry xml-apis.jar in /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-20 10:04:33,603 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry serializer.jar in /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/xalan-2.7.2.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-20 10:04:33,617 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jaxb-api.jar in /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/jaxb-core-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-20 10:04:33,619 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jaxb-core.jar in /content/GUIAuthorization-0.0.1-SNAPSHOT.war/WEB-INF/lib/jaxb-impl-2.3.0.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-20 10:04:34,055 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-20 10:04:34,195 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.PermissionBean
+2018-02-20 10:04:34,195 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.UserExtBean
+2018-02-20 10:04:34,195 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.SincPermissionBean
+2018-02-20 10:04:34,195 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.MenuBean
+2018-02-20 10:04:34,195 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.DomainBean
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.UserBean
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.GroupPermissionBean
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.helper.ListadosGUIAuthorization
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.RoleBean
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.GroupRoleBean
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.seguridad.Authenticator
+2018-02-20 10:04:34,196 ERROR [org.jboss.as.jsf] (MSC service thread 1-6) WFLYJSF0002: Could not load JSF managed bean class: com.osi.gaudi.security.authorization.beans.IdentityBean
+2018-02-20 10:04:34,316 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.session.SingleSignOutFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/session/SingleSignOutFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,369 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.util.AbstractCasFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/util/AbstractCasFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:358)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:437)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:358)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:437)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,370 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.validation.AbstractTicketValidationFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/validation/AbstractTicketValidationFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): Failed to link org/jasig/cas/client/util/AbstractCasFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:358)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:437)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,371 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.validation.Cas20ProxyReceivingTicketValidationFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/validation/Cas20ProxyReceivingTicketValidationFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): Failed to link org/jasig/cas/client/validation/AbstractTicketValidationFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): Failed to link org/jasig/cas/client/util/AbstractCasFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,447 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.util.HttpServletRequestWrapperFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/util/HttpServletRequestWrapperFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,458 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.util.AbstractCasFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/util/AbstractCasFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:760)
+	at org.jboss.modules.ModuleClassLoader.doDefineOrLoadClass(ModuleClassLoader.java:358)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:437)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,459 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.authentication.AuthenticationFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/authentication/AuthenticationFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): Failed to link org/jasig/cas/client/util/AbstractCasFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:14)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.processComponentConfig(InterceptorAnnotationProcessor.java:84)
+	at org.jboss.as.ee.component.deployers.InterceptorAnnotationProcessor.deploy(InterceptorAnnotationProcessor.java:76)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,472 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment GUIAuthorization-0.0.1-SNAPSHOT.war
+2018-02-20 10:04:34,512 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"' are as follows:
+
+	java:global/GUIAuthorization-0.0.1-SNAPSHOT/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization-0.0.1-SNAPSHOT/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization-0.0.1-SNAPSHOT/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-20 10:04:34,551 WARN  [org.jboss.modules] (MSC service thread 1-6) Failed to define class org.jasig.cas.client.session.SingleSignOutFilter in Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/session/SingleSignOutFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:90)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-02-20 10:04:34,554 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/session/SingleSignOutFilter (Module "deployment.GUIAuthorization-0.0.1-SNAPSHOT.war" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter
+	at sun.reflect.GeneratedConstructorAccessor83.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at org.jboss.modules.ModuleClassLoader.defineClass(ModuleClassLoader.java:446)
+	at org.jboss.modules.ModuleClassLoader.loadClassLocal(ModuleClassLoader.java:274)
+	at org.jboss.modules.ModuleClassLoader$1.loadClassLocal(ModuleClassLoader.java:77)
+	at org.jboss.modules.Module.loadModuleClass(Module.java:713)
+	at org.jboss.modules.ModuleClassLoader.findClass(ModuleClassLoader.java:190)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClassUnchecked(ConcurrentClassLoader.java:412)
+	at org.jboss.modules.ConcurrentClassLoader.performLoadClass(ConcurrentClassLoader.java:400)
+	at org.jboss.modules.ConcurrentClassLoader.loadClass(ConcurrentClassLoader.java:116)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:344)
+	at org.jboss.as.ee.utils.ClassLoadingUtils.loadClass(ClassLoadingUtils.java:21)
+	at org.jboss.as.ee.component.deployers.EEModuleConfigurationProcessor.deploy(EEModuleConfigurationProcessor.java:90)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-20 10:04:34,556 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization-0.0.1-SNAPSHOT.war")]) - failure description: {
+    "WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization-0.0.1-SNAPSHOT.war\".INSTALL" => "WFLYSRV0153: Failed to process phase INSTALL of deployment \"GUIAuthorization-0.0.1-SNAPSHOT.war\"
+    Caused by: java.lang.NoClassDefFoundError: Failed to link org/jasig/cas/client/session/SingleSignOutFilter (Module \"deployment.GUIAuthorization-0.0.1-SNAPSHOT.war\" from Service Module Loader): org/jasig/cas/client/util/AbstractConfigurationFilter"},
+    "WFLYCTL0412: Required services that are not installed:" => [
+        "jboss.naming.context.java.authDatasource",
+        "jboss.deployment.unit.\"GUIAuthorization-0.0.1-SNAPSHOT.war\".beanmanager"
+    ],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization-0.0.1-SNAPSHOT.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.deployment.unit.\"GUIAuthorization-0.0.1-SNAPSHOT.war\".batch.artifact.factory is missing [jboss.deployment.unit.\"GUIAuthorization-0.0.1-SNAPSHOT.war\".beanmanager]",
+        "jboss.deployment.unit.\"GUIAuthorization-0.0.1-SNAPSHOT.war\".weld.weldClassIntrospector is missing [jboss.deployment.unit.\"GUIAuthorization-0.0.1-SNAPSHOT.war\".beanmanager]"
+    ]
+}
+2018-02-20 10:04:34,607 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "GUIAuthorization-0.0.1-SNAPSHOT.war" (runtime-name : "GUIAuthorization-0.0.1-SNAPSHOT.war")
+2018-02-20 10:04:34,607 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".beanmanager (missing) dependents: [service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".batch.artifact.factory, service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".weld.weldClassIntrospector] 
+      service jboss.naming.context.java.authDatasource (missing) dependents: [service jboss.persistenceunit."GUIAuthorization-0.0.1-SNAPSHOT.war#tauthor".__FIRST_PHASE__] 
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:11:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:16:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 5) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:21:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:26:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:31:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:36:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:41:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:46:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:51:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 10:56:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:01:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:11:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:16:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 7) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:21:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 9) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:26:54,367 INFO  [org.jboss.as.controller] (External Management Request Threads -- 5) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:31:54,406 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:36:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:41:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 7) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:46:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:51:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 7) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 11:56:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:01:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:11:54,406 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:16:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:21:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 5) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:26:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 9) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:31:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:36:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:41:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:46:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:51:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 12:56:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:01:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 9) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:11:54,406 INFO  [org.jboss.as.controller] (External Management Request Threads -- 7) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:16:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:21:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 9) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:26:54,367 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:31:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:36:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:41:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:46:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:51:54,406 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 13:56:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:01:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:11:54,447 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:16:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:21:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:26:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:31:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:36:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:41:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:46:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:51:54,406 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 14:56:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:01:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 5) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:11:54,406 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:16:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:21:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 4) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:26:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 5) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:31:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:36:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:41:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:46:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:51:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 15:56:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 16:01:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 10) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 16:06:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 16:11:54,405 INFO  [org.jboss.as.controller] (External Management Request Threads -- 6) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 16:16:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 16:21:54,366 INFO  [org.jboss.as.controller] (External Management Request Threads -- 8) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+
+2018-02-20 16:26:54,365 INFO  [org.jboss.as.controller] (External Management Request Threads -- 3) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization-0.0.1-SNAPSHOT.war".INSTALL: WFLYSRV0153: Failed to process phase INSTALL of deployment "GUIAuthorization-0.0.1-SNAPSHOT.war"
+

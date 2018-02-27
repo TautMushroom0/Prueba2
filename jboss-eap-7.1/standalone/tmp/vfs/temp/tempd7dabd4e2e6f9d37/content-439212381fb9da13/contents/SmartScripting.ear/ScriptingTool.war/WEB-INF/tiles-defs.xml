@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+	<tiles-definitions>
+	<!-- Base Agent Tiles Definition -->
+	<definition name="base.definition" path="/jsp/siteLayout.jsp">
+		<put name="header" value="/jsp/header.jsp" />
+		<put name="navigation" value="/jsp/left.jsp" />
+		<put name="footer" value="/jsp/footer.jsp" />
+	</definition>
+	
+	<!-- Tiles Definition of welcome page -->
+	<definition name="page.show" extends="base.definition">
+		<put name="title" value="AVAYA Scripting Tool" />
+		<put name="body" value="/jsp/Show.jsp" />
+	</definition>
+	
+	<!-- Tiles Definition of Error -->
+	<definition name="page.error" extends="base.definition">
+		<put name="title" value="Error" />
+		<put name="body" value="/jsp/Error.jsp" />
+	</definition>
+	
+	<!-- Tiles Definition of Historic Report Agents -->
+	<definition name="page.historicReportAgents" extends="base.management">
+		<put name="title" value="Historic Report" />
+		<put name="report" value="/jsp/HistoricReportAgents.jsp" />
+	</definition>
+	
+	<!-- Tiles Definition of No Campaign -->
+	<definition name="page.noCampaign" extends="base.definition">
+		<put name="title" value="Error" />
+		<put name="body" value="/jsp/NoCampaign.jsp" />
+	</definition>
+	
+	<!-- Base Reports And Management Tiles Definition -->
+	<definition name="base.management" path="/jsp/managementLayout.jsp">
+		<put name="header" value="/jsp/headerReports.jsp" />
+		<put name="footer" value="/jsp/footer.jsp" />
+	</definition>
+
+	<!-- Tiles Definition of Historic Report -->
+	<definition name="page.historicReport" extends="base.management">
+		<put name="title" value="Historic Report" />
+		<put name="report" value="/jsp/HistoricReport.jsp" />
+	</definition>
+	
+	<!-- Tiles Definition of Cache Management -->
+	<definition name="page.cacheManager" extends="base.definition">
+		<put name="title" value="Campaign Management" />
+		<put name="report" value="/jsp/CacheManager.jsp" />
+	</definition>
+	
+	<!-- Tiles Definition of Prices Viewer -->
+	<definition name="page.pricesViewer" extends="base.definition">
+		<put name="title" value="Prices Viewer" />
+		<put name="body" value="/jsp/PricesViewer.jsp" />
+	</definition>
+</tiles-definitions>

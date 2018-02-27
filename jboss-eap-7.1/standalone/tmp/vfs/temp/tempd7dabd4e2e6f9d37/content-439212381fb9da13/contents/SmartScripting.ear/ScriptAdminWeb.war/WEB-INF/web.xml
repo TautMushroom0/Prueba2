@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">  
+  <filter>
+    <filter-name>ResponseOverrideFilter</filter-name>
+    <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ResponseOverrideFilter</filter-name>
+    <url-pattern>*.do</url-pattern>
+  </filter-mapping>
+  <filter-mapping>
+    <filter-name>ResponseOverrideFilter</filter-name>
+    <url-pattern>*.jsp</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>20</session-timeout> 
+  </session-config>
+  
+   <!-- Secutiry AA --> 
+  <security-constraint>   
+    <web-resource-collection>   
+      <web-resource-name>camps</web-resource-name>  
+      <description>Define the roles allowed to access campaign administration.</description>  
+      <url-pattern>/camps/*</url-pattern>   
+      <!--Since no http-method is specified, it applies to all
+      <http-method>POST</http-method>        
+      <http-method>GET</http-method>
+      -->
+    </web-resource-collection>  
+    <auth-constraint>
+      <role-name>campaign</role-name>
+	  <role-name>admin</role-name>
+    </auth-constraint>
+    <user-data-constraint>       
+      <description>SSL not required</description>    
+      <transport-guarantee>NONE</transport-guarantee>   
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint>   
+    <web-resource-collection>   
+      <web-resource-name>admin</web-resource-name>  
+      <description>Define the roles allowed to access users administration.</description>  
+      <url-pattern>/admin/*</url-pattern>   
+      <!--Since no http-method is specified, it applies to all
+      <http-method>POST</http-method>        
+      <http-method>GET</http-method>
+      -->
+    </web-resource-collection>  
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+    <user-data-constraint>       
+      <description>SSL not required</description>    
+      <transport-guarantee>NONE</transport-guarantee>   
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint>   
+    <web-resource-collection>   
+      <web-resource-name>report</web-resource-name>  
+      <description>Define the roles allowed to view reports.</description>  
+      <url-pattern>/report/*</url-pattern>   
+      <!--Since no http-method is specified, it applies to all
+      <http-method>POST</http-method>        
+      <http-method>GET</http-method>
+      -->
+    </web-resource-collection>  
+    <auth-constraint>
+      <role-name>report</role-name>
+      <role-name>admin</role-name>
+    </auth-constraint>
+    <user-data-constraint>       
+      <description>SSL not required</description>    
+      <transport-guarantee>NONE</transport-guarantee>   
+    </user-data-constraint>
+  </security-constraint>
+  
+  <security-constraint>   
+    <web-resource-collection>   
+      <web-resource-name>init</web-resource-name>  
+      <description>Enter application.</description>  
+      <url-pattern>/init.do</url-pattern>   
+      <!--Since no http-method is specified, it applies to all
+      <http-method>POST</http-method>        
+      <http-method>GET</http-method>
+      -->
+    </web-resource-collection>  
+    <auth-constraint>
+      <role-name>*</role-name>
+    </auth-constraint>
+    <user-data-constraint>       
+      <description>SSL not required</description>    
+      <transport-guarantee>NONE</transport-guarantee>   
+    </user-data-constraint>
+  </security-constraint>
+
+  <security-constraint>   
+    <web-resource-collection>   
+      <web-resource-name>logout</web-resource-name>  
+      <description>Exit application.</description>  
+      <url-pattern>/logout.do</url-pattern>   
+      <!--Since no http-method is specified, it applies to all
+      <http-method>POST</http-method>        
+      <http-method>GET</http-method>
+      -->
+    </web-resource-collection>  
+    <auth-constraint>
+      <role-name>*</role-name>
+    </auth-constraint>
+    <user-data-constraint>       
+      <description>SSL not required</description>    
+      <transport-guarantee>NONE</transport-guarantee>   
+    </user-data-constraint>
+  </security-constraint>
+  
+  <login-config>
+    <auth-method>FORM</auth-method>
+    <form-login-config>
+      <form-login-page>/login.jsp</form-login-page>
+      <form-error-page>/login_error.jsp</form-error-page>
+      </form-login-config>
+  </login-config>
+
+  <error-page>
+    <error-code>500</error-code>
+    <location>/errors/500.htm</location>
+  </error-page>
+  
+  <!-- Security roles. For ScriptAdmin they are based on SQL tables -->
+  <security-role>
+    <description>Campaign administration CRUD</description>
+    <role-name>campaign</role-name>
+  </security-role>  
+  <security-role>
+    <description>Users and roles administration</description>
+    <role-name>admin</role-name>
+  </security-role>  
+  <security-role>
+    <description>View system reports</description>
+    <role-name>report</role-name>
+  </security-role>  
+  <security-role>
+    <description>Guest</description>
+    <role-name>guest</role-name>
+  </security-role>  
+</web-app>
+

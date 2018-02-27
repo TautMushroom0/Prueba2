@@ -1,0 +1,7 @@
+{
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}

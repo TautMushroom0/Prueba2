@@ -1,0 +1,298 @@
+/*****************************/
+/* General                   */
+/*****************************/
+
+body, th, td {
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+}
+
+h1{
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #666;
+}
+h2{
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #cb0102;
+}
+h3{
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    color: #cb0102;
+}
+p{
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+}
+a:link {
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+	color: #0044aa;
+	}
+a:visited {
+	color: #8800aa;
+}
+a:hover {
+	color: #cb0102;
+}
+a:active {
+	color: #0044aa;
+}
+a.footer:active {
+	color: white;
+}
+a.footer:link {
+	color: white;
+}
+a.footer:visited {
+	color: white;
+}
+a.footer:hover {
+	color: white;
+}
+
+.sectionTitle{
+    padding: 0px 0px 0px 8px;
+    margin: 0px;
+}
+.inputCell{
+    padding: 4px 7px 4px 7px;
+    margin: 0px;
+}
+.textCell{
+    padding: 4px 7px 1px 7px;
+    margin: 0px;
+}
+
+.editBoxContainer{
+    padding: 8px 0px 8px 8px;
+    margin: 0px;
+}
+.editBox{
+   background-color: #ececec;
+   border: 1px solid #666;
+   margin: 0px;
+   padding: 0px;
+}
+
+/*****************************/
+/* Campaign template styles  */
+/*****************************/
+
+.headerLeft{
+     background-image: URL(/script-admin/imgs/head_left.jpg);
+     background-repeat: no-repeat;
+     width: 208px;
+     height: 79;
+}
+.headerCenter{
+     background-image: URL(/script-admin/imgs/surveycreator.gif);
+     background-repeat: repeat-x;
+     width: 800px;
+     height: 63;
+}
+.headerRight{
+     background-image: URL(/script-admin/imgs/head_right.jpg);
+     background-repeat: no-repeat;
+     width: 51px;
+     height: 79;
+}
+
+.bodyFrame{
+     margin: 0px;
+     padding: 15px 0px 12px 0px;
+}
+
+.bottomFrame{
+	 border-bottom: 4px solid #b3b3b3;
+	 background-color: #cb322b;
+     margin: 0px;
+     padding: 3px 0px 3px 8px;
+}
+
+/*****************************/
+/* DisplayTag library styles */
+/*****************************/
+
+.displayTagBorder{
+          border:1px solid #666 ;
+}
+
+th {
+    padding: 2px 4px 2px 5px;
+    background-color: #ececec;
+    font-weight: bold;
+}
+
+th a {
+  	background-repeat: no-repeat;
+    padding: 0px 0px 0px 0px;\
+}
+
+th.sorted {
+ /* background-color: orange;*/
+}
+
+th.sorted a, th.sortable a {
+	background-position: right;
+	display: block;
+}
+
+th.sortable a {
+	background-image: url(/script-admin/imgs/arrow_off.jpg);
+	color: #666;
+    font-weight: bold;
+    padding: 0px 16px 0px 16px;
+}
+
+th.order1 a {
+	background-image: url(/script-admin/imgs/arrow_down.jpg);
+	color: #666;
+}
+
+th.order2 a {
+	background-image: url(/script-admin/imgs/arrow_up.jpg);
+}
+.edit{
+	background-image: url(/script-admin/imgs/edit.gif);
+	background-repeat: no-repeat;
+	width;:20px;
+    height: 20px;
+}
+.delete{
+	background-image: url(/script-admin/imgs/delete.gif);
+	background-repeat: no-repeat;
+	width: 20px;
+	height: 20px;
+}
+img {
+	border:none;
+}
+
+th a, th a:visited, th a:hover {
+	color: #cb0102;
+}
+th a, th a:visited {
+	color: #666;
+}
+th a:hover {
+	color: #cb0102;
+}
+
+div.exportlinks {
+/*	background-color: #eee; */
+/*	border: 1px dotted #999; */
+	padding: 2px 4px 2px 4px;
+	margin: 5px 10px 10px 0;
+}
+
+span.export {
+    background-repeat: no-repeat;
+	padding: 0px 4px 1px 20px;
+	display:inline;
+	display:inline-block;
+	cursor: pointer;
+}
+
+span.excel {
+	background-image: url(/script-admin/imgs/ico_file_excel.png);
+}
+span.csv {
+	background-image: url(/script-admin/imgs/ico_file_csv.png);
+}
+span.xml {
+	background-image: url(/script-admin/imgs/ico_file_xml.png);
+}
+
+span.mnemonic {
+/*
+  border-style: outset;
+  border-bottom-width: 1px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0px;
+  font-style: normal;
+ */
+  padding-left: 1px;
+  padding-right: 1px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.idsearch input {
+  font-size: 0.7em;
+}
+
+a.name {
+    text-decoration: none;
+}
+
+.help {
+   font-size: 0.8em;
+}
+.odd{
+	font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+    background-color: #ffd7c6;
+}
+.even{
+    font-family: Verdana,arial,helvetica,Sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
+}
+tr a, a:link  {
+    color: #666;
+}
+tr a, a:visited  {
+    color: #666;
+}
+tr a, a:hover {
+    color: #cb0102;
+}
+tr.odd td {
+    padding: 5px 5px 2px 5px;
+    margin: 0px;
+}
+tr.even td {
+    padding: 5px 5px 2px 5px;
+    margin: 0px;
+}
+
+/*****************************/
+/* Reports styles 			 */
+/*****************************/
+
+.Header {
+		 font-weight: bold; 
+		 font-size: 12px; 
+		 font-family: Verdana, Arial, Helvetica, sans-serif;
+		 color: #FFFFFF;
+}
+
+.Footer {
+		 font-size: 8px; 
+		 font-family: Verdana, Arial, Helvetica, sans-serif;
+		 color: #FFFFFF;
+}

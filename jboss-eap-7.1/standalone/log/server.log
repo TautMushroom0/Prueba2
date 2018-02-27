@@ -1,0 +1,639 @@
+2018-02-26 10:09:50,863 INFO  [org.jboss.as.repository] (External Management Request Threads -- 4) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/a2/05900424de5faff79a1f83c7642c23bc2fa627/content
+2018-02-26 10:09:50,867 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 10:09:51,137 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,138 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,138 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,138 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,138 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,139 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,139 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,141 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 10:09:51,142 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 10:09:51,142 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 10:09:51,214 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,214 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,214 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,214 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,214 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,214 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,215 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:09:51,286 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 10:09:51,288 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 4) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "SmartScripting.ear")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:09:51,288 ERROR [org.jboss.as.server] (External Management Request Threads -- 4) WFLYSRV0021: Deploy of deployment "SmartScripting.ear" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:09:51,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 1ms
+2018-02-26 10:09:51,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 1ms
+2018-02-26 10:09:51,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 1ms
+2018-02-26 10:09:51,330 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 41ms
+2018-02-26 10:12:26,424 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 10:12:26,744 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,744 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,744 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,744 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,744 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,744 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,745 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,747 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 10:12:26,748 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 10:12:26,748 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 10:12:26,827 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,827 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,827 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,827 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,827 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,827 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,828 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:12:26,845 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 10:12:26,874 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 5) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "SmartScripting.ear")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:12:26,874 ERROR [org.jboss.as.server] (External Management Request Threads -- 5) WFLYSRV0021: Deploy of deployment "SmartScripting.ear" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:12:26,875 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 1ms
+2018-02-26 10:12:26,876 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 1ms
+2018-02-26 10:12:26,876 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 1ms
+2018-02-26 10:12:26,918 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 43ms
+2018-02-26 10:20:17,941 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/SmartScripting.ear. Deployment changes will not be processed until all content is complete.
+2018-02-26 10:20:20,231 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 10:20:20,479 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,479 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,479 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,479 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,479 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,480 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,480 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 10:20:20,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 10:20:20,482 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 10:20:20,558 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,559 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:20:20,576 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 10:20:20,602 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "SmartScripting.ear")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:20:20,759 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "SmartScripting.ear" (runtime-name : "SmartScripting.ear")
+2018-02-26 10:20:20,760 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 10:23:48,083 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 1ms
+2018-02-26 10:23:48,083 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 1ms
+2018-02-26 10:23:48,083 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 1ms
+2018-02-26 10:23:48,132 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 51ms
+2018-02-26 10:23:48,133 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 10:23:48,375 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,375 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,376 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,376 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,376 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,376 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,376 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,378 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 10:23:48,378 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 10:23:48,379 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,451 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:23:48,466 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 10:23:48,526 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:23:48,538 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "SmartScripting.ear" with deployment "SmartScripting.ear"
+2018-02-26 10:23:48,538 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 10:24:15,717 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 1ms
+2018-02-26 10:24:15,717 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 1ms
+2018-02-26 10:24:15,717 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 1ms
+2018-02-26 10:24:15,763 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 47ms
+2018-02-26 10:24:15,775 INFO  [org.jboss.as.server] (External Management Request Threads -- 6) WFLYSRV0009: Undeployed "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 10:24:15,777 INFO  [org.jboss.as.repository] (External Management Request Threads -- 6) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/a2/05900424de5faff79a1f83c7642c23bc2fa627/content
+2018-02-26 10:30:18,641 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/SmartScripting.ear. Deployment changes will not be processed until all content is complete.
+2018-02-26 10:30:21,922 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/a2/05900424de5faff79a1f83c7642c23bc2fa627/content
+2018-02-26 10:30:21,924 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 10:30:22,173 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,174 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,177 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 10:30:22,177 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 10:30:22,177 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 10:30:22,248 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,248 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,248 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,248 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,248 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,249 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,249 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 10:30:22,265 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 10:30:22,291 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "SmartScripting.ear")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 10:30:22,303 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "SmartScripting.ear" (runtime-name : "SmartScripting.ear")
+2018-02-26 10:30:22,303 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 11:09:04,571 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/61/d14b76a4664440890af1fb271c32f3ca8d8da5/content
+2018-02-26 11:09:04,574 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 1ms
+2018-02-26 11:09:04,575 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 2ms
+2018-02-26 11:09:04,575 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 2ms
+2018-02-26 11:09:04,629 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 56ms
+2018-02-26 11:09:04,630 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 11:09:04,646 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-7) MSC000001: Failed to start service jboss.deployment.unit."SmartScripting.ear".STRUCTURE: org.jboss.msc.service.StartException in service jboss.deployment.unit."SmartScripting.ear".STRUCTURE: WFLYSRV0153: Failed to process phase STRUCTURE of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0054: Failed to process children for EAR ["/content/SmartScripting.ear"]
+	at org.jboss.as.ee.structure.EarStructureProcessor.deploy(EarStructureProcessor.java:248)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: java.util.zip.ZipException: invalid LOC header (bad signature)
+	at java.util.zip.ZipFile.read(Native Method)
+	at java.util.zip.ZipFile.access$1400(ZipFile.java:61)
+	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:717)
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:420)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.jboss.vfs.VFSUtils.copyStream(VFSUtils.java:439)
+	at org.jboss.vfs.VFSUtils.copyStreamAndClose(VFSUtils.java:399)
+	at org.jboss.vfs.VFSUtils.copyStreamAndClose(VFSUtils.java:385)
+	at org.jboss.vfs.VFSUtils.recursiveCopy(VFSUtils.java:779)
+	at org.jboss.vfs.VFSUtils.recursiveCopy(VFSUtils.java:773)
+	at org.jboss.vfs.VFSUtils.recursiveCopy(VFSUtils.java:773)
+	at org.jboss.as.ee.structure.EarStructureProcessor.exportExplodedWar(EarStructureProcessor.java:289)
+	at org.jboss.as.ee.structure.EarStructureProcessor.createResourceRoot(EarStructureProcessor.java:272)
+	at org.jboss.as.ee.structure.EarStructureProcessor.deploy(EarStructureProcessor.java:174)
+	... 6 more
+
+2018-02-26 11:09:04,648 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"SmartScripting.ear\".STRUCTURE" => "WFLYSRV0153: Failed to process phase STRUCTURE of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0054: Failed to process children for EAR [\"/content/SmartScripting.ear\"]
+    Caused by: java.util.zip.ZipException: invalid LOC header (bad signature)"}}
+2018-02-26 11:09:04,657 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "SmartScripting.ear" with deployment "SmartScripting.ear"
+2018-02-26 11:09:04,657 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."SmartScripting.ear".STRUCTURE: WFLYSRV0153: Failed to process phase STRUCTURE of deployment "SmartScripting.ear"
+
+2018-02-26 11:09:04,659 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/a2/05900424de5faff79a1f83c7642c23bc2fa627/content
+2018-02-26 11:09:49,674 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/SmartScripting.ear. Deployment changes will not be processed until all content is complete.
+2018-02-26 11:09:53,567 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/09/2697ac4a238aa8099e73f2b77e5c95234e062e/content
+2018-02-26 11:09:53,569 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 0ms
+2018-02-26 11:09:53,570 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 11:09:53,812 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,813 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,813 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,813 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,813 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,813 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,813 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,816 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 11:09:53,816 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 11:09:53,816 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 11:09:53,887 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,887 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,887 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,887 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,887 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,887 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,888 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:09:53,903 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 11:09:53,929 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 11:09:53,943 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "SmartScripting.ear" with deployment "SmartScripting.ear"
+2018-02-26 11:09:53,943 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 11:09:53,945 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/61/d14b76a4664440890af1fb271c32f3ca8d8da5/content
+2018-02-26 11:31:40,128 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/SmartScripting.ear. Deployment changes will not be processed until all content is complete.
+2018-02-26 11:32:52,010 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0021: Deployment content /opt/jboss-eap-7.1/standalone/deployments/SmartScripting.ear appears to be incomplete and is not progressing toward completion. This content cannot be auto-deployed.
+2018-02-26 11:32:52,010 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0014: Scan found content configured for auto-deploy that could not be safely auto-deployed. See details above. Deployment changes will not be processed until all problematic content is either removed or whether to deploy the content or not is indicated via a .dodeploy or .skipdeploy marker file. Problematic deployments are [SmartScripting.ear]
+2018-02-26 11:32:52,039 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0002: Cannot remove extraneous deployment marker file SmartScripting.ear.pending
+2018-02-26 11:33:20,225 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 1ms
+2018-02-26 11:33:20,226 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 1ms
+2018-02-26 11:33:20,226 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 1ms
+2018-02-26 11:33:20,282 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 57ms
+2018-02-26 11:33:20,283 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 11:33:20,517 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,518 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,521 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 11:33:20,521 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 11:33:20,521 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 11:33:20,595 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,595 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,596 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,596 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,596 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,596 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,596 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:33:20,614 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 11:33:20,635 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 11:33:20,647 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "SmartScripting.ear" with deployment "SmartScripting.ear"
+2018-02-26 11:33:20,647 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 11:37:25,740 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/SmartScripting.ear. Deployment changes will not be processed until all content is complete.
+2018-02-26 11:37:28,232 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0208: Stopped subdeployment (runtime-name: Script.jar) in 2ms
+2018-02-26 11:37:28,232 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptAdminWeb.war) in 3ms
+2018-02-26 11:37:28,233 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0208: Stopped subdeployment (runtime-name: ScriptingTool.war) in 4ms
+2018-02-26 11:37:28,289 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment SmartScripting.ear (runtime-name: SmartScripting.ear) in 60ms
+2018-02-26 11:37:28,290 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "SmartScripting.ear" (runtime-name: "SmartScripting.ear")
+2018-02-26 11:37:28,582 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,582 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,582 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,583 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,583 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,583 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,583 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,586 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0207: Starting subdeployment (runtime-name: "Script.jar")
+2018-02-26 11:37:28,586 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptAdminWeb.war")
+2018-02-26 11:37:28,586 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0207: Starting subdeployment (runtime-name: "ScriptingTool.war")
+2018-02-26 11:37:28,666 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-beanutils.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,666 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-collections.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,666 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-digester.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,666 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-fileupload.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,666 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-logging.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,666 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry commons-validator.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,667 WARN  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0059: Class Path entry jakarta-oro.jar in /content/SmartScripting.ear/SmartScripting.ear/struts.jar  does not point to a valid jar for a Class-Path reference.
+2018-02-26 11:37:28,684 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found
+	at org.jboss.msc.service.ServiceContainerImpl.getRequiredService(ServiceContainerImpl.java:669)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.getDefaultResourceAdapterName(MessageDrivenComponentDescriptionFactory.java:274)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processMessageDrivenBeanMetaData(MessageDrivenComponentDescriptionFactory.java:243)
+	at org.jboss.as.ejb3.deployment.processors.MessageDrivenComponentDescriptionFactory.processBeanMetaData(MessageDrivenComponentDescriptionFactory.java:88)
+	at org.jboss.as.ejb3.deployment.processors.AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.processBeanMetaData(AnnotatedEJBComponentDescriptionDeploymentUnitProcessor.java:64)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.processDeploymentDescriptor(AbstractDeploymentUnitProcessor.java:138)
+	at org.jboss.as.ejb3.deployment.processors.AbstractDeploymentUnitProcessor.deploy(AbstractDeploymentUnitProcessor.java:79)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+
+2018-02-26 11:37:28,710 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}
+2018-02-26 11:37:28,721 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0016: Replaced deployment "SmartScripting.ear" with deployment "SmartScripting.ear"
+2018-02-26 11:37:28,722 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 11:38:30,766 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-26 11:38:33,252 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d/content
+2018-02-26 11:38:33,254 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-26 11:38:33,731 INFO  [org.jboss.as.jpa] (MSC service thread 1-6) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-26 11:38:33,870 INFO  [org.jboss.weld.deployer] (MSC service thread 1-1) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-26 11:38:33,876 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-26 11:38:33,876 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-26 11:38:33,876 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-26 11:38:33,876 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-26 11:38:33,877 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-26 11:38:33,877 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-26 11:38:33,877 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-26 11:38:33,877 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-26 11:38:33,877 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-1) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-26 11:38:33,995 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-2) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-26 11:38:34,005 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-2) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-26 11:38:34,049 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-2) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-26 11:38:34,064 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-2) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-26 11:38:34,081 INFO  [org.jboss.as.webservices] (MSC service thread 1-6) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-26 11:38:34,096 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-26 11:38:34,121 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "GUIAuthorization.war" (runtime-name : "GUIAuthorization.war")
+2018-02-26 11:38:34,122 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0184:    New missing/unsatisfied dependencies:
+      service jboss.naming.context.java.authDatasource (missing) dependents: [service jboss.persistenceunit."GUIAuthorization.war#tauthor", service jboss.persistenceunit."GUIAuthorization.war#tauthor".__FIRST_PHASE__] 
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 11:56:41,298 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-26 11:59:05,013 ERROR [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0021: Deployment content /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war appears to be incomplete and is not progressing toward completion. This content cannot be auto-deployed.
+2018-02-26 11:59:05,013 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0014: Scan found content configured for auto-deploy that could not be safely auto-deployed. See details above. Deployment changes will not be processed until all problematic content is either removed or whether to deploy the content or not is indicated via a .dodeploy or .skipdeploy marker file. Problematic deployments are [GUIAuthorization.war]
+2018-02-26 11:59:05,036 WARN  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0002: Cannot remove extraneous deployment marker file GUIAuthorization.war.pending
+2018-02-26 12:01:06,428 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-26 12:06:08,327 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/68/c043be1b320e5a9a3dead5dc463ec9ea88dece/content
+2018-02-26 12:06:08,337 INFO  [org.jboss.as.webservices] (MSC service thread 1-3) WFLYWS0004: Stopping service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-26 12:06:08,398 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 69ms
+2018-02-26 12:06:08,399 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-26 12:06:08,857 INFO  [org.jboss.as.jpa] (MSC service thread 1-2) WFLYJPA0002: Read persistence.xml for tauthor
+2018-02-26 12:06:08,991 INFO  [org.jboss.weld.deployer] (MSC service thread 1-6) WFLYWELD0003: Processing weld deployment GUIAuthorization.war
+2018-02-26 12:06:08,997 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UserAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:app/GUIAuthorization/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:module/UserAction!com.osi.gaudi.security.authorization.business.IUser
+	java:global/GUIAuthorization/UserAction
+	java:app/GUIAuthorization/UserAction
+	java:module/UserAction
+
+2018-02-26 12:06:08,997 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'GroupRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:app/GUIAuthorization/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:module/GroupRoleAction!com.osi.gaudi.security.authorization.business.IGroupRole
+	java:global/GUIAuthorization/GroupRoleAction
+	java:app/GUIAuthorization/GroupRoleAction
+	java:module/GroupRoleAction
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'Authorization' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:app/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:module/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+	java:jboss/exported/GUIAuthorization/Authorization!com.osi.gaudi.security.authorization.ws.IAuthorization
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'DomainAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:app/GUIAuthorization/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:module/DomainAction!com.osi.gaudi.security.authorization.business.IDomain
+	java:global/GUIAuthorization/DomainAction
+	java:app/GUIAuthorization/DomainAction
+	java:module/DomainAction
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PermissionRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:app/GUIAuthorization/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:module/PermissionRoleAction!com.osi.gaudi.security.authorization.business.IPermissionRole
+	java:global/GUIAuthorization/PermissionRoleAction
+	java:app/GUIAuthorization/PermissionRoleAction
+	java:module/PermissionRoleAction
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'PermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:app/GUIAuthorization/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:module/PermissionAction!com.osi.gaudi.security.authorization.business.IPermission
+	java:global/GUIAuthorization/PermissionAction
+	java:app/GUIAuthorization/PermissionAction
+	java:module/PermissionAction
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'UserRoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:app/GUIAuthorization/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:module/UserRoleAction!com.osi.gaudi.security.authorization.business.IUserRole
+	java:global/GUIAuthorization/UserRoleAction
+	java:app/GUIAuthorization/UserRoleAction
+	java:module/UserRoleAction
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'GroupPermissionAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:app/GUIAuthorization/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:module/GroupPermissionAction!com.osi.gaudi.security.authorization.business.IGroupPermission
+	java:global/GUIAuthorization/GroupPermissionAction
+	java:app/GUIAuthorization/GroupPermissionAction
+	java:module/GroupPermissionAction
+
+2018-02-26 12:06:08,998 INFO  [org.jboss.as.ejb3.deployment] (MSC service thread 1-6) WFLYEJB0473: JNDI bindings for session bean named 'RoleAction' in deployment unit 'deployment "GUIAuthorization.war"' are as follows:
+
+	java:global/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:app/GUIAuthorization/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:module/RoleAction!com.osi.gaudi.security.authorization.business.IRole
+	java:global/GUIAuthorization/RoleAction
+	java:app/GUIAuthorization/RoleAction
+	java:module/RoleAction
+
+2018-02-26 12:06:09,109 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-6) JBWS024061: Adding service endpoint metadata: id=Authorization
+ address=http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+ implementor=com.osi.gaudi.security.authorization.ws.Authorization
+ serviceName={http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization
+ portName={http://ws.authorization.security.gaudi.osi.com/}portAuthorization
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-26 12:06:09,121 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-6) Creating Service {http://ws.authorization.security.gaudi.osi.com/}serviceAuthorization from class com.osi.gaudi.security.authorization.ws.IAuthorization
+2018-02-26 12:06:09,160 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-6) Setting the server's publish address to be http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization
+2018-02-26 12:06:09,174 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-6) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/GUIAuthorization.war/serviceAuthorization.wsdl
+2018-02-26 12:06:09,191 INFO  [org.jboss.as.webservices] (MSC service thread 1-4) WFLYWS0003: Starting service jboss.ws.endpoint."GUIAuthorization.war".Authorization
+2018-02-26 12:06:09,211 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {
+    "WFLYCTL0412: Required services that are not installed:" => ["jboss.naming.context.java.authDatasource"],
+    "WFLYCTL0180: Services with missing/unavailable dependencies" => [
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\" is missing [jboss.naming.context.java.authDatasource]",
+        "jboss.persistenceunit.\"GUIAuthorization.war#tauthor\".__FIRST_PHASE__ is missing [jboss.naming.context.java.authDatasource]"
+    ]
+}
+2018-02-26 12:06:09,229 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "GUIAuthorization.war" with deployment "GUIAuthorization.war"
+2018-02-26 12:06:09,229 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.subunit."SmartScripting.ear"."Script.jar".PARSE: WFLYSRV0153: Failed to process phase PARSE of subdeployment "Script.jar" of deployment "SmartScripting.ear"
+
+2018-02-26 12:06:09,231 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/17/f9619ba354082faee413ea76b06d25828fe82d/content

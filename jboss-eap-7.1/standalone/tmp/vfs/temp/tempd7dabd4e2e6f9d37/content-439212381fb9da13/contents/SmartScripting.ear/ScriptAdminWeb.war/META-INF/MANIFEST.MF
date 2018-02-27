@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Class-Path: commons-beanutils-1.9.2.jar 
+ commons-digester-2.1.jar 
+ commons-lang-2.6.jar 
+ commons-validator-1.4.1.jar 
+ displaytag-1.2.jar 
+ displaytag-portlet-1.2.jar 
+ displaytag-export-poi-1.2.jar 
+ struts.jar 
+ Script.jar 
+ CampaignCache.jar
+

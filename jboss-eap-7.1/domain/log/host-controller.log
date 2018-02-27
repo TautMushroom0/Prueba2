@@ -1,0 +1,47 @@
+2018-01-26 15:19:52,288 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.0.Final-redhat-1
+2018-01-26 15:19:52,568 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1-redhat-1
+2018-01-26 15:19:52,618 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) starting
+2018-01-26 15:19:53,328 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/host=master/core-service=management/management-interface=native-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:19:53,330 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/host=master/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:19:53,397 INFO  [org.wildfly.security] (Controller Boot Thread) ELY00001: WildFly Elytron version 1.1.7.Final-redhat-1
+2018-01-26 15:19:53,434 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0003: Creating http management service using network interface (management) port (29990) securePort (-1)
+2018-01-26 15:19:53,441 INFO  [org.xnio] (MSC service thread 1-7) XNIO version 3.5.4.Final-redhat-1
+2018-01-26 15:19:53,446 INFO  [org.xnio.nio] (MSC service thread 1-7) XNIO NIO Implementation Version 3.5.4.Final-redhat-1
+2018-01-26 15:19:53,487 INFO  [org.jboss.remoting] (MSC service thread 1-7) JBoss Remoting version 5.0.5.Final-redhat-1
+2018-01-26 15:19:53,525 INFO  [org.jboss.as.patching] (MSC service thread 1-2) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2018-01-26 15:19:53,539 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-2) WFLYDM0111: Keystore /opt/jboss-eap-7.1/domain/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-01-26 15:19:53,582 INFO  [org.jboss.as.remoting] (MSC service thread 1-6) WFLYRMT0001: Listening on 172.18.48.29:29999
+2018-01-26 15:19:54,664 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/profile=default/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:19:54,714 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/profile=ha/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:19:54,747 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/profile=full/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:19:54,787 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/profile=full-ha/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:19:55,003 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0062: Http management interface listening on http://172.18.48.29:29990/management and https://172.18.48.29:-1/management
+2018-01-26 15:19:55,003 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0053: Admin console listening on http://172.18.48.29:29990 and https://172.18.48.29:-1
+2018-01-26 15:19:55,003 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) (Host Controller) started in 3094ms - Started 77 of 79 services (23 services are lazy, passive or on-demand)
+2018-01-26 15:24:51,467 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 8) WFLYHC0023: Starting server server1
+2018-01-26 15:24:53,190 INFO  [org.jboss.as.host.controller] (management task-10) WFLYHC0021: Server [Server:server1] connected using connection [Channel ID 5c853106 (inbound) of Remoting connection 37c25d98 to JON.skillnet.local/172.18.48.29:43677 of endpoint "master:MANAGEMENT" <301747be>]
+2018-01-26 15:24:53,218 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 8) WFLYHC0023: Starting server server2
+2018-01-26 15:24:53,233 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server server1
+2018-01-26 15:24:55,787 INFO  [org.jboss.as.host.controller] (management task-6) WFLYHC0021: Server [Server:server2] connected using connection [Channel ID 6e3615b6 (inbound) of Remoting connection 67295c18 to JON.skillnet.local/172.18.48.29:58908 of endpoint "master:MANAGEMENT" <301747be>]
+2018-01-26 15:24:55,800 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 8) WFLYHC0023: Starting server server3
+2018-01-26 15:24:55,811 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server server2
+2018-01-26 15:24:58,613 INFO  [org.jboss.as.host.controller] (management task-4) WFLYHC0021: Server [Server:server3] connected using connection [Channel ID 67e9594e (inbound) of Remoting connection 3bcba70d to JON.skillnet.local/172.18.48.29:39206 of endpoint "master:MANAGEMENT" <301747be>]
+2018-01-26 15:24:58,628 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 8) WFLYHC0023: Starting server server
+2018-01-26 15:24:58,637 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server server3
+2018-01-26 15:25:01,453 INFO  [org.jboss.as.host.controller] (management task-3) WFLYHC0021: Server [Server:server] connected using connection [Channel ID 3edf5843 (inbound) of Remoting connection 61ef5a5c to JON.skillnet.local/172.18.48.29:53689 of endpoint "master:MANAGEMENT" <301747be>]
+2018-01-26 15:25:01,467 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server server
+2018-01-26 15:26:00,477 INFO  [org.jboss.as.repository] (External Management Request Threads -- 9) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/domain/data/content/cf/04933424a8c1a8f18a294f0c648a8168e1f5e3/content
+2018-01-30 14:17:07,986 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 7) WFLYHC0023: Starting server Prueb1
+2018-01-30 14:17:10,477 INFO  [org.jboss.as.host.controller] (management task-8) WFLYHC0021: Server [Server:Prueb1] connected using connection [Channel ID 1ea3c9b6 (inbound) of Remoting connection 1074050a to JON.skillnet.local/172.18.48.29:49899 of endpoint "master:MANAGEMENT" <301747be>]
+2018-01-30 14:17:10,486 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server Prueb1
+2018-01-30 14:21:39,266 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 7) WFLYHC0024: Stopping server Prueb1
+2018-01-30 14:21:39,367 INFO  [org.jboss.as.host.controller] (management task-7) WFLYHC0027: Unregistering server Prueb1
+2018-01-30 14:21:39,464 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server Prueb1
+2018-01-30 14:21:47,355 INFO  [org.jboss.as.host.controller] (External Management Request Threads -- 5) WFLYHC0023: Starting server Prueb1
+2018-01-30 14:21:49,173 INFO  [org.jboss.as.host.controller] (management task-10) WFLYHC0021: Server [Server:Prueb1] connected using connection [Channel ID 6592f9e7 (inbound) of Remoting connection 32930dfb to JON.skillnet.local/172.18.48.29:42319 of endpoint "master:MANAGEMENT" <301747be>]
+2018-01-30 14:21:49,188 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server Prueb1
+2018-02-21 09:49:09,641 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server server2
+2018-02-21 11:54:46,600 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server server
+2018-02-21 11:54:46,643 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server server1
+2018-02-21 11:54:46,644 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server server3
+2018-02-21 11:54:46,644 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server Prueb1

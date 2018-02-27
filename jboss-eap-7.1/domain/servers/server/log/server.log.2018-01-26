@@ -1,0 +1,126 @@
+2018-01-26 15:24:59,769 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.0.Final-redhat-1
+2018-01-26 15:25:00,436 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1-redhat-1
+2018-01-26 15:25:00,591 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) starting
+2018-01-26 15:25:00,591 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:server] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss-eap-7.1/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = /opt/jboss-eap-7.1/domain
+	jboss.domain.config.dir = /opt/jboss-eap-7.1/domain/configuration
+	jboss.home.dir = /opt/jboss-eap-7.1
+	jboss.host.name = jon
+	jboss.modules.dir = /opt/jboss-eap-7.1/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = master:server
+	jboss.qualified.host.name = jon.skillnet.local
+	jboss.server.base.dir = /opt/jboss-eap-7.1/domain/servers/server
+	jboss.server.config.dir = /opt/jboss-eap-7.1/domain/servers/server/configuration
+	jboss.server.data.dir = /opt/jboss-eap-7.1/domain/servers/server/data
+	jboss.server.deploy.dir = /opt/jboss-eap-7.1/domain/servers/server/data/content
+	jboss.server.log.dir = /opt/jboss-eap-7.1/domain/servers/server/log
+	jboss.server.name = server
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss-eap-7.1/domain/servers/server/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss-eap-7.1/domain/configuration/default-server-logging.properties
+	module.path = /opt/jboss-eap-7.1/modules
+	org.jboss.boot.log.file = /opt/jboss-eap-7.1/domain/servers/server/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss-eap-7.1/jboss-modules.jar -mp /opt/jboss-eap-7.1/modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss-eap-7.1
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = America/New_York
+2018-01-26 15:25:00,592 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:server] -Xms64m -Xmx256m -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true -Djboss.home.dir=/opt/jboss-eap-7.1 -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=/opt/jboss-eap-7.1/domain/servers/server/log -Djboss.server.temp.dir=/opt/jboss-eap-7.1/domain/servers/server/tmp -Djboss.server.data.dir=/opt/jboss-eap-7.1/domain/servers/server/data -Dorg.jboss.boot.log.file=/opt/jboss-eap-7.1/domain/servers/server/log/server.log -Dlogging.configuration=file:/opt/jboss-eap-7.1/domain/configuration/default-server-logging.properties 
+2018-01-26 15:25:00,683 INFO  [org.xnio] (MSC service thread 1-8) XNIO version 3.5.4.Final-redhat-1
+2018-01-26 15:25:00,689 INFO  [org.xnio.nio] (MSC service thread 1-8) XNIO NIO Implementation Version 3.5.4.Final-redhat-1
+2018-01-26 15:25:00,722 INFO  [org.jboss.remoting] (MSC service thread 1-8) JBoss Remoting version 5.0.5.Final-redhat-1
+2018-01-26 15:25:01,130 INFO  [org.wildfly.security] (ServerService Thread Pool -- 2) ELY00001: WildFly Elytron version 1.1.7.Final-redhat-1
+2018-01-26 15:25:02,761 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 28) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-01-26 15:25:02,889 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 18) WFLYWS0002: Activating WebServices Extension
+2018-01-26 15:25:02,893 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 35) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-01-26 15:25:02,902 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 37) WFLYSEC0002: Activating Security Subsystem
+2018-01-26 15:25:02,906 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=5.0.2.Final-redhat-1
+2018-01-26 15:25:02,912 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 43) WFLYNAM0001: Activating Naming Subsystem
+2018-01-26 15:25:02,932 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 50) WFLYRS0016: RESTEasy version 3.0.24.Final-redhat-1
+2018-01-26 15:25:02,937 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 12) WFLYUT0014: Creating file handler for path '/opt/jboss-eap-7.1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-01-26 15:25:02,939 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 45) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-01-26 15:25:02,939 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0003: Undertow 1.4.18.Final-redhat-2 starting
+2018-01-26 15:25:02,970 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 51) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-01-26 15:25:03,031 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 52) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2018-01-26 15:25:03,049 INFO  [org.jboss.as.naming] (MSC service thread 1-7) WFLYNAM0003: Starting Naming Service
+2018-01-26 15:25:03,053 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-1) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-01-26 15:25:03,057 INFO  [org.jboss.as.connector] (MSC service thread 1-5) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final-redhat-1)
+2018-01-26 15:25:03,098 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 56) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-01-26 15:25:03,150 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-01-26 15:25:03,321 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2018-01-26 15:25:03,321 INFO  [org.jboss.as.ejb3] (MSC service thread 1-4) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2018-01-26 15:25:03,442 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2018-01-26 15:25:03,463 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2018-01-26 15:25:03,702 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0006: Undertow HTTP listener default listening on 172.18.48.29:8480
+2018-01-26 15:25:03,716 INFO  [org.jboss.as.ejb3] (MSC service thread 1-2) WFLYEJB0493: EJB subsystem suspension complete
+2018-01-26 15:25:03,827 INFO  [org.jboss.as.patching] (MSC service thread 1-4) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2018-01-26 15:25:03,852 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-4) WFLYDM0111: Keystore /opt/jboss-eap-7.1/domain/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-01-26 15:25:03,875 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-6) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-01-26 15:25:03,893 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTPS listener https listening on 172.18.48.29:8843
+2018-01-26 15:25:03,960 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBossWS 5.1.9.Final-redhat-1 (Apache CXF 3.1.12.redhat-1) 
+2018-01-26 15:25:04,035 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-01-26 15:25:04,039 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) started in 5121ms - Started 276 of 541 services (345 services are lazy, passive or on-demand)

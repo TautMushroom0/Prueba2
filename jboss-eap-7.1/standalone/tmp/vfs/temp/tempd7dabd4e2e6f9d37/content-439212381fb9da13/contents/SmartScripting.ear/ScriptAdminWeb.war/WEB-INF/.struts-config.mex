@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/init.do" location="1250,50" dimension="57,62" />
+  <StrutsActivity path="/camps/create_campaign_result.do" location="1550,50" dimension="388,88" />
+  <StrutsActivity path="/camps/create_campaign.do" location="2150,50" dimension="388,88" />
+  <StrutsActivity path="/camps/show_campaigns.do" location="50,50" dimension="356,88" />
+  <StrutsActivity path="/camps/delete_campaign.do" location="1250,250" dimension="356,88" />
+  <StrutsActivity path="/camps/deactivate_campaign.do" location="1850,250" dimension="377,88" />
+  <StrutsActivity path="/camps/activate_campaign.do" location="2450,250" dimension="365,88" />
+  <StrutsActivity path="/camps/users.do" location="1250,450" dimension="370,88" />
+  <StrutsActivity path="/camps/show_pages.do" location="650,50" dimension="333,88" />
+  <StrutsActivity path="/camps/create_page_result.do" location="1850,450" dimension="365,88" />
+  <StrutsActivity path="/camps/create_page.do" location="2450,450" dimension="365,88" />
+  <StrutsActivity path="/camps/delete_page.do" location="1250,650" dimension="333,88" />
+  <StrutsActivity path="/camps/variable.do" location="1850,650" dimension="379,88" />
+  <StrutsActivity path="/camps/variable_no_check.do" location="2450,650" dimension="379,88" />
+  <StrutsActivity path="/camps/delete_variable.do" location="1550,850" dimension="347,88" />
+  <StrutsActivity path="/camps/create_category.do" location="2450,2450" dimension="386,88" />
+  <StrutsActivity path="/camps/category.do" location="50,2650" dimension="386,88" />
+  <StrutsActivity path="/camps/category_no_check.do" location="1850,2650" dimension="386,88" />
+  <StrutsActivity path="/camps/delete_category.do" location="2450,2650" dimension="386,88" />
+  <StrutsActivity path="/camps/paragraph.do" location="2150,850" dimension="391,88" />
+  <StrutsActivity path="/camps/delete_paragraph.do" location="50,950" dimension="359,88" />
+  <StrutsActivity path="/camps/paragraph_attribute.do" location="650,950" dimension="434,88" />
+  <StrutsActivity path="/camps/paragraph_attribute_no_check.do" location="1250,1050" dimension="434,88" />
+  <StrutsActivity path="/camps/modify_attribute.do" location="1850,1050" dimension="434,88" />
+  <StrutsActivity path="/camps/text_attributes.do" location="2450,1050" dimension="406,88" />
+  <StrutsActivity path="/camps/text_attributes_no_check.do" location="50,1150" dimension="406,88" />
+  <StrutsActivity path="/camps/modify_text_attribute.do" location="650,1150" dimension="406,88" />
+  <StrutsActivity path="/camps/delete_attribute.do" location="1250,1250" dimension="352,88" />
+  <StrutsActivity path="/camps/text.do" location="1850,1250" dimension="363,88" />
+  <StrutsActivity path="/camps/text_no_check.do" location="2450,1250" dimension="363,88" />
+  <StrutsActivity path="/camps/text_details.do" location="50,1350" dimension="358,88" />
+  <StrutsActivity path="/camps/text_details_no_check.do" location="650,1350" dimension="358,88" />
+  <StrutsActivity path="/camps/options.do" location="1250,1450" dimension="315,88" />
+  <StrutsActivity path="/camps/create_option.do" location="50,450" dimension="315,88" />
+  <StrutsActivity path="/camps/options_no_check.do" location="1850,1450" dimension="315,88" />
+  <StrutsActivity path="/camps/delete_option.do" location="2450,1450" dimension="341,88" />
+  <StrutsActivity path="/camps/end_cod.do" location="50,1550" dimension="340,88" />
+  <StrutsActivity path="/camps/end_cod_no_check.do" location="650,1550" dimension="340,88" />
+  <StrutsActivity path="/camps/delete_end_cod.do" location="1250,1650" dimension="340,88" />
+  <StrutsActivity path="/camps/delete_text.do" location="1850,1650" dimension="331,88" />
+  <StrutsActivity path="/camps/delete_parameter.do" location="2450,1650" dimension="359,88" />
+  <StrutsActivity path="/report/actions.do" location="50,1750" dimension="350,88" />
+  <StrutsActivity path="/report/CampaignByCategory.do" location="650,1750" dimension="403,88" />
+  <StrutsActivity path="/report/TotalCalls.do" location="950,2450" dimension="345,88" />
+  <StrutsActivity path="/report/HistoricCalls.do" location="1850,2450" dimension="345,88" />
+  <StrutsActivity path="/report/ResultQuestion.do" location="2750,850" dimension="372,88" />
+  <StrutsActivity path="/report/HistoricAgents.do" location="2750,2850" dimension="368,88" />
+  <StrutsActivity path="/report/ResultReportQuestion.do" location="50,2950" dimension="372,88" />
+  <StrutsActivity path="/report/DetailQuestions.do" location="650,2750" dimension="356,88" />
+  <StrutsActivity path="/report/Questions.do" location="1250,1850" dimension="380,88" />
+  <StrutsActivity path="/logout.do" location="50,750" dimension="356,88" />
+  <StrutsActivity path="/admin/show.do" location="1850,1850" dimension="365,88" />
+  <StrutsActivity path="/admin/options.do" location="2450,1850" dimension="380,88" />
+  <StrutsActivity path="/report/ResultQuestionFinal.do" location="1250,2750" dimension="394,88" />
+  <StrutsActivity path="/start.jsp" location="50,1950" dimension="74,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp" location="350,1950" dimension="344,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp" location="650,450" dimension="323,49" />
+  <StrutsActivity path="/report/actions" location="950,1950" dimension="101,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/campaign/t_campaign_users.jsp" location="50,2050" dimension="338,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp" location="650,2050" dimension="301,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp" location="1250,2050" dimension="302,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp" location="1850,2050" dimension="330,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp" location="1250,2650" dimension="340,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp" location="2450,2050" dimension="353,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/paragraph/c_create_paragraph.jsp" location="50,2150" dimension="354,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp" location="650,2150" dimension="394,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp" location="1250,2150" dimension="293,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp" location="1850,2150" dimension="325,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp" location="2450,2150" dimension="360,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp" location="50,2250" dimension="364,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_text_attribute.jsp" location="650,2250" dimension="351,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/text/c_create_text.jsp" location="1250,2250" dimension="294,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/text-details/c_create_parameter.jsp" location="1850,2250" dimension="359,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp" location="2450,2250" dimension="314,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp" location="50,2350" dimension="374,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_campaign_calls.jsp" location="650,2350" dimension="236,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_user_calls.jsp" location="950,2350" dimension="212,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/menu/t_menu_list.jsp" location="1250,2350" dimension="240,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_campaign_category_calls.jsp" location="1550,2350" dimension="285,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_total_calls.jsp" location="1550,2450" dimension="213,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_historic_calls.jsp" location="1250,950" dimension="225,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_result_question.jsp" location="1850,2850" dimension="239,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_historic_agents.jsp" location="1550,3250" dimension="238,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_resultreport_question.jsp" location="1850,3250" dimension="269,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_detail_questions.jsp" location="650,2550" dimension="243,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_questions.jsp" location="2150,2350" dimension="211,49" />
+  <StrutsActivity path="/index.html" location="2450,2350" dimension="83,49" />
+  <StrutsActivity path="/WEB-INF/jsp/users-admin/t_view.jsp" location="50,2450" dimension="210,49" />
+  <StrutsActivity path="/WEB-INF/jsp/users-admin/t_roles.jsp" location="350,2450" dimension="211,49" />
+  <StrutsActivity path="/WEB-INF/jsp/users-admin/t_profile.jsp" location="650,2450" dimension="218,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_result_question_final.jsp" location="50,2850" dimension="265,49" />
+  <StrutsActivity path="/WEB-INF/jsp/reports/t_result_question_res.jsp" location="2150,2850" dimension="260,49" />
+  <StrutsActivity path="/WEB-INF/jsp/show_pages.jsp" location="650,550" dimension="176,49" />
+  <StrutsActivity path="/WEB-INF/jsp/show_paragraphs.jsp" location="950,550" dimension="202,49" />
+  <StrutsActivity path="/WEB-INF/jsp/show_texts.jsp" location="50,650" dimension="172,49" />
+  <StrutsActivity path="/WEB-INF/jsp/show_simple_texts.jsp" location="350,650" dimension="207,49" />
+  <StrutsActivity path="/login.jsp" location="650,850" dimension="73,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campanas.jsp" location="650,650" dimension="164,49" />
+  <StrutsActivity path="/WEB-INF/jsp/paginas.jsp" location="950,650" dimension="153,49" />
+  <StrutsActivity path="/WEB-INF/jsp/parrafos.jsp" location="650,750" dimension="157,49" />
+  <StrutsActivity path="/WEB-INF/jsp/textos.jsp" location="950,750" dimension="147,49" />
+  <StrutsActivity path="WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp" location="950,850" dimension="319,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/page/c_create_category.jsp" location="45,2550" dimension="321,49" />
+  <StrutsActivity path="/WEB-INF/jsp/campaigns-admin/variable/c_create_category.jsp" location="650,2650" dimension="335,49" />
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp,null,/camps/modify_text_attribute.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2175,2174" />
+      <AbsolutePoint location="2264,2174" />
+      <AbsolutePoint location="2264,1217" />
+      <AbsolutePoint location="1056,1217" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,null,/camps/delete_option.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2450,2152" />
+      <AbsolutePoint location="2406,2152" />
+      <AbsolutePoint location="2406,1494" />
+      <AbsolutePoint location="2450,1494" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/paragraph_attribute_no_check.do,show_paragraph_attributes_form,/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1684,1094" />
+      <AbsolutePoint location="1789,1094" />
+      <AbsolutePoint location="1789,1965" />
+      <AbsolutePoint location="1129,1965" />
+      <AbsolutePoint location="1129,2174" />
+      <AbsolutePoint location="1044,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/modify_attribute.do,edit_attribute_form,/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2284,1094" />
+      <AbsolutePoint location="2305,1094" />
+      <AbsolutePoint location="2305,2020" />
+      <AbsolutePoint location="1795,2020" />
+      <AbsolutePoint location="1795,2174" />
+      <AbsolutePoint location="1850,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/DetailQuestions.do,detail_questions,/WEB-INF/jsp/reports/t_detail_questions.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="828,2794" />
+      <AbsolutePoint location="771,2574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp,null,/camps/options.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2450,2252" />
+      <AbsolutePoint location="2341,2252" />
+      <AbsolutePoint location="2341,1595" />
+      <AbsolutePoint location="1407,1595" />
+      <AbsolutePoint location="1407,1538" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/logout.do,init,/index.html,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,794" />
+      <AbsolutePoint location="-304,794" />
+      <AbsolutePoint location="-304,-181" />
+      <AbsolutePoint location="3283,-181" />
+      <AbsolutePoint location="3283,2374" />
+      <AbsolutePoint location="2533,2374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp,null,/camps/end_cod.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="421,2350" />
+      <AbsolutePoint location="421,2036" />
+      <AbsolutePoint location="293,2036" />
+      <AbsolutePoint location="293,1901" />
+      <AbsolutePoint location="537,1901" />
+      <AbsolutePoint location="537,1594" />
+      <AbsolutePoint location="390,1594" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/CampaignByCategory.do,campaign,/WEB-INF/jsp/reports/t_campaign_category_calls.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="718,1838" />
+      <AbsolutePoint location="718,2020" />
+      <AbsolutePoint location="642,2020" />
+      <AbsolutePoint location="642,2649" />
+      <AbsolutePoint location="1770,2649" />
+      <AbsolutePoint location="1770,2399" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_text.do,ok,/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2015,1738" />
+      <AbsolutePoint location="2015,1799" />
+      <AbsolutePoint location="1243,1799" />
+      <AbsolutePoint location="1243,2174" />
+      <AbsolutePoint location="1250,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,null,/camps/create_option.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2810,2152" />
+      <AbsolutePoint location="2931,2152" />
+      <AbsolutePoint location="2931,383" />
+      <AbsolutePoint location="207,383" />
+      <AbsolutePoint location="207,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/variable.do,show_variable_form,/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2057,738" />
+      <AbsolutePoint location="2057,2092" />
+      <AbsolutePoint location="1850,2092" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/users-admin/t_view.jsp,null,/admin/options.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,2456" />
+      <AbsolutePoint location="23,2456" />
+      <AbsolutePoint location="23,2614" />
+      <AbsolutePoint location="3034,2614" />
+      <AbsolutePoint location="3034,1862" />
+      <AbsolutePoint location="2830,1862" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/reports/t_result_question.jsp,null,/report/ResultQuestion.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1969,2874" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_attributes_no_check.do,show_text_attributes_form,/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="423,1238" />
+      <AbsolutePoint location="423,1865" />
+      <AbsolutePoint location="229,1865" />
+      <AbsolutePoint location="229,2014" />
+      <AbsolutePoint location="606,2014" />
+      <AbsolutePoint location="606,2274" />
+      <AbsolutePoint location="414,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/variable.do,show_pages,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2039,738" />
+      <AbsolutePoint location="2039,1014" />
+      <AbsolutePoint location="1177,1014" />
+      <AbsolutePoint location="1177,2014" />
+      <AbsolutePoint location="890,2014" />
+      <AbsolutePoint location="890,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/paragraph.do,show_paragraphs,/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2541,894" />
+      <AbsolutePoint location="3266,894" />
+      <AbsolutePoint location="3266,2074" />
+      <AbsolutePoint location="2803,2074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/TotalCalls.do,campaign,/WEB-INF/jsp/reports/t_total_calls.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1295,2484" />
+      <AbsolutePoint location="1550,2484" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp,null,/camps/paragraph_attribute.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="847,2199" />
+      <AbsolutePoint location="847,2214" />
+      <AbsolutePoint location="-55,2214" />
+      <AbsolutePoint location="-55,1095" />
+      <AbsolutePoint location="867,1095" />
+      <AbsolutePoint location="867,1038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/paragraph_attribute.do,show_texts,/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1084,984" />
+      <AbsolutePoint location="1151,984" />
+      <AbsolutePoint location="1151,2188" />
+      <AbsolutePoint location="1250,2188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text.do,show_text_form,/WEB-INF/jsp/campaigns-admin/text/c_create_text.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2031,1338" />
+      <AbsolutePoint location="2031,1423" />
+      <AbsolutePoint location="3004,1423" />
+      <AbsolutePoint location="3004,2558" />
+      <AbsolutePoint location="1492,2558" />
+      <AbsolutePoint location="1492,2299" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/options_no_check.do,options_form,/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2165,1508" />
+      <AbsolutePoint location="2291,1508" />
+      <AbsolutePoint location="2291,2274" />
+      <AbsolutePoint location="2450,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/show_pages.do,ok,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,94" />
+      <AbsolutePoint location="602,94" />
+      <AbsolutePoint location="602,1865" />
+      <AbsolutePoint location="800,1865" />
+      <AbsolutePoint location="800,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/HistoricAgents.do,show,/WEB-INF/jsp/reports/t_historic_agents.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/users.do,select_users,/WEB-INF/jsp/campaigns-admin/campaign/t_campaign_users.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1435,538" />
+      <AbsolutePoint location="1435,638" />
+      <AbsolutePoint location="-85,638" />
+      <AbsolutePoint location="-85,1495" />
+      <AbsolutePoint location="441,1495" />
+      <AbsolutePoint location="441,1925" />
+      <AbsolutePoint location="303,1925" />
+      <AbsolutePoint location="303,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_category.do,ok,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2643,2738" />
+      <AbsolutePoint location="2643,2956" />
+      <AbsolutePoint location="-334,2956" />
+      <AbsolutePoint location="-334,2139" />
+      <AbsolutePoint location="753,2139" />
+      <AbsolutePoint location="753,2099" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/options.do,remove_user,/WEB-INF/jsp/users-admin/t_view.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2830,1880" />
+      <AbsolutePoint location="2995,1880" />
+      <AbsolutePoint location="2995,2545" />
+      <AbsolutePoint location="179,2545" />
+      <AbsolutePoint location="179,2499" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/activate_campaign.do,ok,/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2632,250" />
+      <AbsolutePoint location="2632,213" />
+      <AbsolutePoint location="811,213" />
+      <AbsolutePoint location="811,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_details_no_check.do,show_text_details,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1008,1394" />
+      <AbsolutePoint location="2875,1394" />
+      <AbsolutePoint location="2875,2214" />
+      <AbsolutePoint location="2660,2214" />
+      <AbsolutePoint location="2660,2199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/ResultQuestionFinal.do,res,/WEB-INF/jsp/reports/t_result_question_res.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1447,2838" />
+      <AbsolutePoint location="1447,3016" />
+      <AbsolutePoint location="2280,3016" />
+      <AbsolutePoint location="2280,2899" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/show.do,view,/WEB-INF/jsp/users-admin/t_view.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2215,1912" />
+      <AbsolutePoint location="2447,1912" />
+      <AbsolutePoint location="2447,2995" />
+      <AbsolutePoint location="-56,2995" />
+      <AbsolutePoint location="-56,2474" />
+      <AbsolutePoint location="50,2474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_page_result.do,show_pages,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2014,538" />
+      <AbsolutePoint location="2014,614" />
+      <AbsolutePoint location="632,614" />
+      <AbsolutePoint location="632,1895" />
+      <AbsolutePoint location="770,1895" />
+      <AbsolutePoint location="770,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text.do,show_texts,/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,1294" />
+      <AbsolutePoint location="1842,1294" />
+      <AbsolutePoint location="1842,2188" />
+      <AbsolutePoint location="1543,2188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/paragraph.do,show_paragraph_form,/WEB-INF/jsp/campaigns-admin/paragraph/c_create_paragraph.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2358,938" />
+      <AbsolutePoint location="2358,1982" />
+      <AbsolutePoint location="1090,1982" />
+      <AbsolutePoint location="1090,2247" />
+      <AbsolutePoint location="241,2247" />
+      <AbsolutePoint location="241,2199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,null,/camps/delete_page.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="951,2074" />
+      <AbsolutePoint location="1207,2074" />
+      <AbsolutePoint location="1207,914" />
+      <AbsolutePoint location="1416,914" />
+      <AbsolutePoint location="1416,738" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,null,/camps/show_campaigns.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,474" />
+      <AbsolutePoint location="380,474" />
+      <AbsolutePoint location="380,138" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/modify_text_attribute.do,show_text_attributes_form,/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1056,1231" />
+      <AbsolutePoint location="1063,1231" />
+      <AbsolutePoint location="1063,2236" />
+      <AbsolutePoint location="232,2236" />
+      <AbsolutePoint location="232,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/options.do,add_user,/WEB-INF/jsp/users-admin/t_view.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2830,1922" />
+      <AbsolutePoint location="2897,1922" />
+      <AbsolutePoint location="2897,2436" />
+      <AbsolutePoint location="155,2436" />
+      <AbsolutePoint location="155,2450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/ResultReportQuestion.do,show,/WEB-INF/jsp/reports/t_resultreport_question.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/show_campaigns.do,ok,/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="237,138" />
+      <AbsolutePoint location="237,213" />
+      <AbsolutePoint location="751,213" />
+      <AbsolutePoint location="751,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/options.do,modify_user,/WEB-INF/jsp/users-admin/t_view.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2640,1850" />
+      <AbsolutePoint location="2640,1799" />
+      <AbsolutePoint location="3519,1799" />
+      <AbsolutePoint location="3519,3482" />
+      <AbsolutePoint location="-496,3482" />
+      <AbsolutePoint location="-496,2514" />
+      <AbsolutePoint location="149,2514" />
+      <AbsolutePoint location="149,2499" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,null,/camps/delete_variable.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="822,2099" />
+      <AbsolutePoint location="822,2114" />
+      <AbsolutePoint location="1701,2114" />
+      <AbsolutePoint location="1701,938" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp,null,/camps/create_campaign_result.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="572,1950" />
+      <AbsolutePoint location="572,-25" />
+      <AbsolutePoint location="1744,-25" />
+      <AbsolutePoint location="1744,50" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_attributes.do,show_text_attributes_form,/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2653,1138" />
+      <AbsolutePoint location="2653,1141" />
+      <AbsolutePoint location="29,1141" />
+      <AbsolutePoint location="29,2274" />
+      <AbsolutePoint location="50,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_details.do,show_parameters_form,/WEB-INF/jsp/campaigns-admin/text-details/c_create_parameter.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1376" />
+      <AbsolutePoint location="-25,1376" />
+      <AbsolutePoint location="-25,2986" />
+      <AbsolutePoint location="2531,2986" />
+      <AbsolutePoint location="2531,2765" />
+      <AbsolutePoint location="2400,2765" />
+      <AbsolutePoint location="2400,2292" />
+      <AbsolutePoint location="2209,2292" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/end_cod.do,ending_codes_form,/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1612" />
+      <AbsolutePoint location="23,1612" />
+      <AbsolutePoint location="23,2374" />
+      <AbsolutePoint location="50,2374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp,null,/camps/category.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1420,2699" />
+      <AbsolutePoint location="1420,2731" />
+      <AbsolutePoint location="436,2731" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/ResultQuestionFinal.do,show,/WEB-INF/jsp/reports/t_result_question.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1477,2838" />
+      <AbsolutePoint location="1477,2874" />
+      <AbsolutePoint location="1850,2874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/actions.do,menu,/WEB-INF/jsp/reports/menu/t_menu_list.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1794" />
+      <AbsolutePoint location="50,2399" />
+      <AbsolutePoint location="1392,2399" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/reports/t_historic_agents.jsp,null,/report/HistoricAgents.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/init.do,null,/start.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1278,112" />
+      <AbsolutePoint location="1278,153" />
+      <AbsolutePoint location="-25,153" />
+      <AbsolutePoint location="-25,1315" />
+      <AbsolutePoint location="453,1315" />
+      <AbsolutePoint location="453,1889" />
+      <AbsolutePoint location="87,1889" />
+      <AbsolutePoint location="87,1950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/category_no_check.do,show_create_category_form,/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,2731" />
+      <AbsolutePoint location="1450,2731" />
+      <AbsolutePoint location="1450,2699" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/show_campaigns.do,report,/report/actions,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="220,138" />
+      <AbsolutePoint location="220,353" />
+      <AbsolutePoint location="2900,353" />
+      <AbsolutePoint location="2900,1840" />
+      <AbsolutePoint location="1004,1840" />
+      <AbsolutePoint location="1004,1950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_page.do,ok,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,714" />
+      <AbsolutePoint location="501,714" />
+      <AbsolutePoint location="501,1925" />
+      <AbsolutePoint location="740,1925" />
+      <AbsolutePoint location="740,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/end_cod.do,show_pages,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1594" />
+      <AbsolutePoint location="-85,1594" />
+      <AbsolutePoint location="-85,2114" />
+      <AbsolutePoint location="770,2114" />
+      <AbsolutePoint location="770,2099" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/options.do,change_roles,/WEB-INF/jsp/users-admin/t_roles.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2450,1894" />
+      <AbsolutePoint location="2376,1894" />
+      <AbsolutePoint location="2376,2414" />
+      <AbsolutePoint location="477,2414" />
+      <AbsolutePoint location="477,2450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp,null,/camps/delete_paragraph.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2803,2083" />
+      <AbsolutePoint location="3339,2083" />
+      <AbsolutePoint location="3339,3259" />
+      <AbsolutePoint location="-421,3259" />
+      <AbsolutePoint location="-421,994" />
+      <AbsolutePoint location="50,994" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_attributes_no_check.do,edit_attribute_form,/WEB-INF/jsp/campaigns-admin/attribute/c_edit_text_attribute.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="441,1238" />
+      <AbsolutePoint location="441,1292" />
+      <AbsolutePoint location="1160,1292" />
+      <AbsolutePoint location="1160,2274" />
+      <AbsolutePoint location="1001,2274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/reports/t_historic_calls.jsp,null,/report/HistoricCalls.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,984" />
+      <AbsolutePoint location="1237,984" />
+      <AbsolutePoint location="1237,1065" />
+      <AbsolutePoint location="-220,1065" />
+      <AbsolutePoint location="-220,3211" />
+      <AbsolutePoint location="1725,3211" />
+      <AbsolutePoint location="1725,2514" />
+      <AbsolutePoint location="1850,2514" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_variable.do,ok,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1723,938" />
+      <AbsolutePoint location="1723,2136" />
+      <AbsolutePoint location="800,2136" />
+      <AbsolutePoint location="800,2099" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/options.do,edit_roles,/WEB-INF/jsp/users-admin/t_roles.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2640,1938" />
+      <AbsolutePoint location="2640,2036" />
+      <AbsolutePoint location="455,2036" />
+      <AbsolutePoint location="455,2450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,null,/camps/delete_campaign.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="841,450" />
+      <AbsolutePoint location="841,294" />
+      <AbsolutePoint location="1250,294" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_campaign_result.do,show_create_form,/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1774,138" />
+      <AbsolutePoint location="1774,814" />
+      <AbsolutePoint location="471,814" />
+      <AbsolutePoint location="471,1950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/options_no_check.do,create_success,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2165,1494" />
+      <AbsolutePoint location="2319,1494" />
+      <AbsolutePoint location="2319,2174" />
+      <AbsolutePoint location="2450,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_parameter.do,ok,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2450,1694" />
+      <AbsolutePoint location="2250,1694" />
+      <AbsolutePoint location="2250,2136" />
+      <AbsolutePoint location="2600,2136" />
+      <AbsolutePoint location="2600,2150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/Questions.do,campaign,/WEB-INF/jsp/reports/t_questions.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1617,1850" />
+      <AbsolutePoint location="1617,2399" />
+      <AbsolutePoint location="2255,2399" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/options.do,create_success,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1565,1494" />
+      <AbsolutePoint location="1819,1494" />
+      <AbsolutePoint location="1819,2114" />
+      <AbsolutePoint location="2630,2114" />
+      <AbsolutePoint location="2630,2150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp,null,/camps/modify_attribute.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2175,2152" />
+      <AbsolutePoint location="2222,2152" />
+      <AbsolutePoint location="2222,1138" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_attributes.do,show_text_details,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2845,1138" />
+      <AbsolutePoint location="2845,2114" />
+      <AbsolutePoint location="2652,2114" />
+      <AbsolutePoint location="2652,2150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_no_check.do,show_text_form,/WEB-INF/jsp/campaigns-admin/text/c_create_text.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2813,1294" />
+      <AbsolutePoint location="3247,1294" />
+      <AbsolutePoint location="3247,2813" />
+      <AbsolutePoint location="1665,2813" />
+      <AbsolutePoint location="1665,2514" />
+      <AbsolutePoint location="1522,2514" />
+      <AbsolutePoint location="1522,2299" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_campaign.do,ok,/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,324" />
+      <AbsolutePoint location="871,324" />
+      <AbsolutePoint location="871,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_details.do,show_text_details,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,1394" />
+      <AbsolutePoint location="-166,1394" />
+      <AbsolutePoint location="-166,-106" />
+      <AbsolutePoint location="3088,-106" />
+      <AbsolutePoint location="3088,2192" />
+      <AbsolutePoint location="2810,2192" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/variable_no_check.do,show_variable_form,/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2829,694" />
+      <AbsolutePoint location="2896,694" />
+      <AbsolutePoint location="2896,1844" />
+      <AbsolutePoint location="927,1844" />
+      <AbsolutePoint location="927,2045" />
+      <AbsolutePoint location="2015,2045" />
+      <AbsolutePoint location="2015,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/HistoricCalls.do,show,/WEB-INF/jsp/reports/t_historic_calls.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1850,2484" />
+      <AbsolutePoint location="1800,2484" />
+      <AbsolutePoint location="1800,3311" />
+      <AbsolutePoint location="3166,3311" />
+      <AbsolutePoint location="3166,765" />
+      <AbsolutePoint location="1362,765" />
+      <AbsolutePoint location="1362,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/options.do,options_form,/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1565,1516" />
+      <AbsolutePoint location="1651,1516" />
+      <AbsolutePoint location="1651,2236" />
+      <AbsolutePoint location="2607,2236" />
+      <AbsolutePoint location="2607,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_end_cod.do,show_pages,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1250,1694" />
+      <AbsolutePoint location="1099,1694" />
+      <AbsolutePoint location="1099,1865" />
+      <AbsolutePoint location="830,1865" />
+      <AbsolutePoint location="830,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp,null,/camps/create_page_result.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1401,2050" />
+      <AbsolutePoint location="1401,1989" />
+      <AbsolutePoint location="2907,1989" />
+      <AbsolutePoint location="2907,577" />
+      <AbsolutePoint location="2032,577" />
+      <AbsolutePoint location="2032,538" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_campaign_result.do,show_campaigns,/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1744,138" />
+      <AbsolutePoint location="1744,183" />
+      <AbsolutePoint location="781,183" />
+      <AbsolutePoint location="781,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/ResultQuestion.do,show,/WEB-INF/jsp/reports/t_result_question.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="1969,2874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/modify_attribute.do,show_paragraph_attributes_form,/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2067,1138" />
+      <AbsolutePoint location="2067,1171" />
+      <AbsolutePoint location="1229,1171" />
+      <AbsolutePoint location="1229,2152" />
+      <AbsolutePoint location="1044,2152" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_category.do,show_create_category_form,/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2450,2494" />
+      <AbsolutePoint location="2311,2494" />
+      <AbsolutePoint location="2311,2765" />
+      <AbsolutePoint location="1770,2765" />
+      <AbsolutePoint location="1770,2679" />
+      <AbsolutePoint location="1590,2679" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp,null,/camps/variable.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1997,2050" />
+      <AbsolutePoint location="1997,1943" />
+      <AbsolutePoint location="3301,1943" />
+      <AbsolutePoint location="3301,814" />
+      <AbsolutePoint location="2021,814" />
+      <AbsolutePoint location="2021,738" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_option.do,ok,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2791,1494" />
+      <AbsolutePoint location="2981,1494" />
+      <AbsolutePoint location="2981,2174" />
+      <AbsolutePoint location="2810,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/modify_text_attribute.do,edit_attribute_form,/WEB-INF/jsp/campaigns-admin/attribute/c_edit_text_attribute.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="853,1238" />
+      <AbsolutePoint location="853,1265" />
+      <AbsolutePoint location="-136,1265" />
+      <AbsolutePoint location="-136,3016" />
+      <AbsolutePoint location="523,3016" />
+      <AbsolutePoint location="523,2514" />
+      <AbsolutePoint location="901,2514" />
+      <AbsolutePoint location="901,2299" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/actions.do,campaign_calls,/WEB-INF/jsp/reports/t_campaign_calls.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="205,1838" />
+      <AbsolutePoint location="205,2046" />
+      <AbsolutePoint location="523,2046" />
+      <AbsolutePoint location="523,2374" />
+      <AbsolutePoint location="650,2374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/actions.do,user_calls,/WEB-INF/jsp/reports/t_user_calls.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="225,1750" />
+      <AbsolutePoint location="225,1700" />
+      <AbsolutePoint location="1077,1700" />
+      <AbsolutePoint location="1077,2350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/paragraph_attribute.do,show_paragraph_attributes_form,/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1084,1006" />
+      <AbsolutePoint location="1099,1006" />
+      <AbsolutePoint location="1099,1195" />
+      <AbsolutePoint location="1673,1195" />
+      <AbsolutePoint location="1673,2214" />
+      <AbsolutePoint location="877,2214" />
+      <AbsolutePoint location="877,2199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/admin/options.do,edit_profile,/WEB-INF/jsp/users-admin/t_profile.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2601,1850" />
+      <AbsolutePoint location="2601,1765" />
+      <AbsolutePoint location="3196,1765" />
+      <AbsolutePoint location="3196,2911" />
+      <AbsolutePoint location="606,2911" />
+      <AbsolutePoint location="606,2476" />
+      <AbsolutePoint location="650,2476" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_attribute.do,paragraph,/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1602,1316" />
+      <AbsolutePoint location="1637,1316" />
+      <AbsolutePoint location="1637,2174" />
+      <AbsolutePoint location="1543,2174" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/category.do,show_create_category_form,/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="436,2714" />
+      <AbsolutePoint location="1403,2714" />
+      <AbsolutePoint location="1403,2699" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/paragraph_attribute_no_check.do,edit_attribute_form,/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1467,1138" />
+      <AbsolutePoint location="1467,1231" />
+      <AbsolutePoint location="2236,1231" />
+      <AbsolutePoint location="2236,2136" />
+      <AbsolutePoint location="2012,2136" />
+      <AbsolutePoint location="2012,2150" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_attribute.do,text,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1602,1294" />
+      <AbsolutePoint location="1759,1294" />
+      <AbsolutePoint location="1759,2214" />
+      <AbsolutePoint location="2630,2214" />
+      <AbsolutePoint location="2630,2199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,null,/camps/delete_end_cod.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="860,2050" />
+      <AbsolutePoint location="860,1895" />
+      <AbsolutePoint location="1129,1895" />
+      <AbsolutePoint location="1129,1700" />
+      <AbsolutePoint location="1250,1700" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp,null,/camps/text_attributes.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="232,2299" />
+      <AbsolutePoint location="232,2346" />
+      <AbsolutePoint location="2430,2346" />
+      <AbsolutePoint location="2430,1094" />
+      <AbsolutePoint location="2450,1094" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,null,/camps/delete_category.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,2091" />
+      <AbsolutePoint location="589,2091" />
+      <AbsolutePoint location="589,3392" />
+      <AbsolutePoint location="2626,3392" />
+      <AbsolutePoint location="2626,2738" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/deactivate_campaign.do,ok,/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2038,338" />
+      <AbsolutePoint location="2038,413" />
+      <AbsolutePoint location="901,413" />
+      <AbsolutePoint location="901,450" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/text_details_no_check.do,show_parameters_form,/WEB-INF/jsp/campaigns-admin/text-details/c_create_parameter.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,1394" />
+      <AbsolutePoint location="448,1394" />
+      <AbsolutePoint location="448,1848" />
+      <AbsolutePoint location="1028,1848" />
+      <AbsolutePoint location="1028,1916" />
+      <AbsolutePoint location="1106,1916" />
+      <AbsolutePoint location="1106,2247" />
+      <AbsolutePoint location="2029,2247" />
+      <AbsolutePoint location="2029,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_option.do,options_form,/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,516" />
+      <AbsolutePoint location="41,516" />
+      <AbsolutePoint location="41,2336" />
+      <AbsolutePoint location="2607,2336" />
+      <AbsolutePoint location="2607,2299" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/end_cod_no_check.do,ending_codes_form,/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="990,1613" />
+      <AbsolutePoint location="2424,1613" />
+      <AbsolutePoint location="2424,2446" />
+      <AbsolutePoint location="237,2446" />
+      <AbsolutePoint location="237,2399" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_option.do,create_success,/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="50,494" />
+      <AbsolutePoint location="5,494" />
+      <AbsolutePoint location="5,2314" />
+      <AbsolutePoint location="2779,2314" />
+      <AbsolutePoint location="2779,2199" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/WEB-INF/jsp/reports/t_resultreport_question.jsp,null,/report/ResultReportQuestion.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_page_result.do,show_create_page_form,/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2050,538" />
+      <AbsolutePoint location="2050,559" />
+      <AbsolutePoint location="2913,559" />
+      <AbsolutePoint location="2913,2008" />
+      <AbsolutePoint location="1407,2008" />
+      <AbsolutePoint location="1407,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/category.do,show_pages,/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="436,2670" />
+      <AbsolutePoint location="572,2670" />
+      <AbsolutePoint location="572,2074" />
+      <AbsolutePoint location="650,2074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_campaign.do,show_create_form,/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2344,138" />
+      <AbsolutePoint location="2344,845" />
+      <AbsolutePoint location="523,845" />
+      <AbsolutePoint location="523,1950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/delete_paragraph.do,ok,/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="409,994" />
+      <AbsolutePoint location="550,994" />
+      <AbsolutePoint location="550,1840" />
+      <AbsolutePoint location="1000,1840" />
+      <AbsolutePoint location="1000,1924" />
+      <AbsolutePoint location="1098,1924" />
+      <AbsolutePoint location="1098,1994" />
+      <AbsolutePoint location="2626,1994" />
+      <AbsolutePoint location="2626,2050" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/camps/create_page.do,show_create_page_form,/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2815,494" />
+      <AbsolutePoint location="2875,494" />
+      <AbsolutePoint location="2875,977" />
+      <AbsolutePoint location="1691,977" />
+      <AbsolutePoint location="1691,2074" />
+      <AbsolutePoint location="1552,2074" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report/ResultQuestionFinal.do,final,/WEB-INF/jsp/reports/t_result_question_final.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1417,2838" />
+      <AbsolutePoint location="1417,2874" />
+      <AbsolutePoint location="315,2874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

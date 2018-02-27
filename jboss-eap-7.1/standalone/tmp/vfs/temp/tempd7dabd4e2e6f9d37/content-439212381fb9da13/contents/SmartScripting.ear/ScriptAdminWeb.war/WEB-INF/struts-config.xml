@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<form-beans>
+		<form-bean name="scriptAdminForm" type="com.avaya.pso.co.scriptAdmin.web.form.ScriptAdminForm" />
+		<form-bean name="createCampaignForm" type="com.avaya.pso.co.scriptAdmin.web.form.CreateCampaignForm" />
+		<form-bean name="createAttributeForm" type="com.avaya.pso.co.scriptAdmin.web.form.CreateAttributeForm"/>
+		<form-bean name="admin_b" type="com.avaya.pso.co.scriptAdmin.web.form.UsersAdminForm"/>
+	    <form-bean name="report_b" type="com.avaya.pso.co.scriptAdmin.web.form.ReportForm"/>
+        <form-bean name="report_campaign" type="com.avaya.pso.co.scriptAdmin.web.form.CampaignReportForm" />
+		<form-bean name="report_questions" type="com.avaya.pso.co.scriptAdmin.web.form.QuestionsReportForm" />
+		<form-bean name="report_total" type="com.avaya.pso.co.scriptAdmin.web.form.TotalCallsForm" />
+		<form-bean name="report_historic_calls" type="com.avaya.pso.co.scriptAdmin.web.form.HistoricCallsForm" />
+		<form-bean name="report_historic_agents" type="com.avaya.pso.co.scriptAdmin.web.form.HistoricAgentsForm" />
+		<form-bean name="report_detail_questions" type="com.avaya.pso.co.scriptAdmin.web.form.DetailQuestionsForm"/>	
+		<form-bean name="report_result_question" type="com.avaya.pso.co.scriptAdmin.web.form.ResultQuestionForm" />
+		<form-bean name="resultreport_question" type="com.avaya.pso.co.scriptAdmin.web.form.ResultQuestionForm" />
+	</form-beans>
+
+	<action-mappings> 
+		<!--  Init Action -->
+	  	<action path="/init" validate="false" scope="request" forward="/start.jsp"/>
+
+		<!--  Campaigns -->
+  		<action path="/camps/create_campaign_result" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateCampaignResultAction"
+			name="createCampaignForm"
+			validate="true"
+	       	scope="session"
+	       	input="/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp">
+			<forward name="show_create_form" path="/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp"/>
+			<forward name="show_campaigns" path="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp"/>			
+  		</action>    		  
+  		<action path="/camps/create_campaign" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateCampaignResultAction"
+			name="createCampaignForm"
+			validate="false"
+	       	scope="session">
+			<forward name="show_create_form" path="/WEB-INF/jsp/campaigns-admin/campaign/c_create_campaign.jsp"/>
+  		</action>    		  
+	  	<action path="/camps/show_campaigns" 
+	  			type="com.avaya.pso.co.scriptAdmin.web.action.ShowCampaignsAction"
+	  			name="scriptAdminForm"
+	  			validate="true"
+            	scope="session"
+            	input="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp">
+    		<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp"/>
+    		<forward name="report" path="/report/actions"/>
+  		</action>  
+  		<action path="/camps/delete_campaign" 
+			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteCampaignAction"
+  			name="scriptAdminForm"
+			validate="true"
+	       	scope="session"
+	       	input="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp">
+			<forward name = "ok" path="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp"/>
+  		</action>      		
+  		<action path="/camps/deactivate_campaign" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeactivateCampaignAction"
+  			name="scriptAdminForm"
+	       	scope="session">
+			<forward name = "ok" path="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp"/>
+  		</action>    		 
+  		<action path="/camps/activate_campaign" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.ActivateCampaignAction"
+  			name="scriptAdminForm"
+	       	scope="session">
+			<forward name = "ok" path="/WEB-INF/jsp/campaigns-admin/campaign/c_show_camps.jsp"/>
+  		</action>    		 
+  		<action path="/camps/users" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.EditCampaignUsersAction"
+  			name="scriptAdminForm"
+	       	scope="session">
+			<forward name = "select_users" path="/WEB-INF/jsp/campaigns-admin/campaign/t_campaign_users.jsp"/>
+  		</action>    		 
+
+		<!--  Pages -->  		
+	  	<action path="/camps/show_pages" 
+	  			type="com.avaya.pso.co.scriptAdmin.web.action.ShowPagesAction"
+	  			name="scriptAdminForm"
+            	scope="session">
+    		<forward name = "ok" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>
+  		</action>    
+  		<action path="/camps/create_page_result" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreatePageResultAction"
+			name="createCampaignForm"
+			validate="true"
+	       	scope="session"
+	       	input="/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp">
+			<forward name="show_create_page_form" path="/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp"/>
+			<forward name="show_pages" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>			
+  		</action>    		  
+  		<action path="/camps/create_page" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreatePageResultAction"
+			name="createCampaignForm"
+			validate="false"
+	       	scope="session">
+			<forward name="show_create_page_form" path="/WEB-INF/jsp/campaigns-admin/page/c_create_page.jsp"/>
+  		</action>    		  
+  		<action path="/camps/delete_page" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeletePageAction"
+  			name="scriptAdminForm"
+	       	scope="session"
+	       	validate="true"
+	       	input="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp">
+			<forward name = "ok" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>
+  		</action>    		 
+
+		<!-- Variables -->  		  		
+		<action path="/camps/variable" 
+			type="com.avaya.pso.co.scriptAdmin.web.action.CreateVariableResultAction"
+			name="createCampaignForm"
+			validate="true"
+			input="/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp"
+	       	scope="session">
+			<forward name="show_variable_form" path="/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp"/>
+			<forward name="show_pages" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>			
+  		</action> 
+		<action path="/camps/variable_no_check" 
+			type="com.avaya.pso.co.scriptAdmin.web.action.CreateVariableResultAction"
+			name="createCampaignForm"
+			validate="false"
+	       	scope="session">
+			<forward name="show_variable_form" path="/WEB-INF/jsp/campaigns-admin/variable/c_create_variable.jsp"/>
+  		</action> 
+  		<action path="/camps/delete_variable" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteVariableAction"
+  			name="scriptAdminForm"
+  			validate="true"
+  			input="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"
+	       	scope="session">
+			<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>
+  		</action>    		 
+
+		<!-- Categories -->
+		<action path="/camps/create_category" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateCategoryResultAction"
+			name="createCampaignForm"
+			validate="false"
+	       	scope="session">
+			<forward name="show_create_category_form" path="/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp"/>
+  		</action>
+  		<action path="/camps/category" 
+			type="com.avaya.pso.co.scriptAdmin.web.action.CreateCategoryResultAction"
+			name="createCampaignForm"
+			validate="true"
+			input="/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp"
+	       	scope="session">
+			<forward name="show_create_category_form" path="/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp"/>
+			<forward name="show_pages" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>			
+  		</action>   
+  		<action path="/camps/category_no_check" 
+			type="com.avaya.pso.co.scriptAdmin.web.action.CreateCategoryResultAction"
+			name="createCampaignForm"
+			validate="false"
+	       	scope="session">
+			<forward name="show_create_category_form" path="/WEB-INF/jsp/campaigns-admin/category/c_create_category.jsp"/>
+  		</action> 
+  		<action path="/camps/delete_category" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateCategoryResultAction"
+  			name="createCampaignForm"
+  			validate="true"
+  			input="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"
+	       	scope="session">
+			<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>
+  		</action>     
+  		
+		<!--  Paragraphs -->  		   				
+  		<action path="/camps/paragraph" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateParagraphResultAction"
+  			name="createCampaignForm"
+  			validate="false"
+	       	scope="session">
+			<forward name="show_paragraph_form" path="/WEB-INF/jsp/campaigns-admin/paragraph/c_create_paragraph.jsp"/>	       	
+			<forward name="show_paragraphs" path="/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp"/>
+  		</action>    		  		
+  		<action path="/camps/delete_paragraph" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteParagraphAction"
+  			name="scriptAdminForm"
+  			validate="true"
+  			input="/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp"
+	       	scope="session">
+			<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/paragraph/c_show_paragraphs.jsp"/>
+  		</action>    		 	
+
+		<!-- Paragraph Attributes -->  		
+  		<action path="/camps/paragraph_attribute" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateAttributeParagraphResultAction"
+  			name="createAttributeForm"
+  			validate="true"
+  			input="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp"
+	       	scope="session">	       	
+			<forward name="show_paragraph_attributes_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp"/>
+			<forward name="show_texts" path="/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp"/>
+  		</action>    		   		
+  		<action path="/camps/paragraph_attribute_no_check" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateAttributeParagraphResultAction"
+  			name="createAttributeForm"
+  			validate="false"
+	       	scope="session">	       	
+			<forward name="show_paragraph_attributes_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp"/>
+			<forward name="edit_attribute_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp"/>
+  		</action>    		   		
+  		<action path="/camps/modify_attribute" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateAttributeParagraphResultAction"
+  			name="createAttributeForm"
+  			validate="true"
+  			input="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp"
+	       	scope="session">	       	
+			<forward name="edit_attribute_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp"/>
+			<forward name="show_paragraph_attributes_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_paragraph.jsp"/>
+  		</action>    		   		
+
+		<!-- Text Attributes -->   		  	
+  		<action path="/camps/text_attributes" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateAttributeTextResultAction"
+  			name="createAttributeForm"
+  			validate="true"
+	       	scope="session"
+	       	input="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp">
+	       	<forward name="show_text_attributes_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp"/>
+			<forward name="show_text_details" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>	       	
+  		</action>    		 
+  		<action path="/camps/text_attributes_no_check" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateAttributeTextResultAction"
+  			name="createAttributeForm"
+	       	scope="session">
+	       	<forward name="show_text_attributes_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp"/>
+			<forward name="edit_attribute_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_text_attribute.jsp"/>
+  		</action>    		 
+  		<action path="/camps/modify_text_attribute" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateAttributeTextResultAction"
+  			name="createAttributeForm"
+  			validate="true"
+  			input="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_attribute.jsp"
+	       	scope="session">	       	
+			<forward name="edit_attribute_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_edit_text_attribute.jsp"/>
+			<forward name="show_text_attributes_form" path="/WEB-INF/jsp/campaigns-admin/attribute/c_create_attribute_text.jsp"/>
+  		</action>    		   		
+
+		<!--  Common Atrributes  -->  		
+  		<action path="/camps/delete_attribute" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteAttributeAction"
+  			name="scriptAdminForm"
+	       	scope="session">
+			<forward name="paragraph" path="/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp"/>
+			<forward name="text" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+  		</action>    		 
+
+		<!-- Texts -->
+  		<action path="/camps/text"
+			type="com.avaya.pso.co.scriptAdmin.web.action.CreateTextResultAction"
+			name="createCampaignForm" validate="false" scope="session">
+			<forward name="show_text_form"
+				path="/WEB-INF/jsp/campaigns-admin/text/c_create_text.jsp" />
+			<forward name="show_texts"
+				path="/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp" />
+		</action>
+		<action path="/camps/text_no_check" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.CreateTextResultAction"
+  			name="createCampaignForm"
+  			validate="false">
+	       	<forward name="show_text_form" path="/WEB-INF/jsp/campaigns-admin/text/c_create_text.jsp"/>
+  		</action>    		  				  		  				
+
+		<!-- Text Details -->
+		<action path="/camps/text_details" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.ShowTextDetailsAction"
+  			name="scriptAdminForm"
+  			validate="false"
+        	scope="session">
+			<forward name="show_text_details" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+			<forward name="show_parameters_form" path="/WEB-INF/jsp/campaigns-admin/text-details/c_create_parameter.jsp"/>
+  		</action>    		 
+		<action path="/camps/text_details_no_check" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.ShowTextDetailsAction"
+  			name="scriptAdminForm"
+  			validate="false"
+        	scope="session">
+        	<forward name="show_text_details" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+			<forward name="show_parameters_form" path="/WEB-INF/jsp/campaigns-admin/text-details/c_create_parameter.jsp"/>
+  		</action>    		 
+  		
+		<!-- Options -->
+		<action path="/camps/options" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.OptionsAction"
+  			name="scriptAdminForm"
+        	scope="session"
+        	input="/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp"
+        	validate="true">
+			<forward name="options_form" path="/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp"/>
+			<forward name="create_success" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+  		</action>  
+  		<action path="/camps/create_option" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.OptionsAction"
+  			name="scriptAdminForm"
+        	scope="session"
+        	input="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"
+        	validate="true">
+			<forward name="options_form" path="/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp"/>
+			<forward name="create_success" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+  		</action>  
+		<action path="/camps/options_no_check" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.OptionsAction"
+  			name="scriptAdminForm"
+        	scope="session"
+        	validate="false">
+			<forward name="options_form" path="/WEB-INF/jsp/campaigns-admin/option/c_create_option.jsp"/>
+			<forward name="create_success" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+  		</action>  
+  		<action path="/camps/delete_option" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteOptionAction"
+  			name="scriptAdminForm"
+	       	scope="session"
+        	input="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"
+        	validate="true">
+			<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+  		</action>
+  		
+  		<!-- Ending Codes -->
+		<action path="/camps/end_cod" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.EndingCodesAction"
+  			name="createCampaignForm"
+        	scope="session"
+        	input="/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp"
+        	validate="true">
+			<forward name="ending_codes_form" path="/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp"/>
+			<forward name="show_pages" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>
+  		</action>  
+		<action path="/camps/end_cod_no_check" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.EndingCodesAction"
+  			name="createCampaignForm"
+        	scope="session"
+        	validate="false">
+			<forward name="ending_codes_form" path="/WEB-INF/jsp/campaigns-admin/ending-code/c_create_ending_code.jsp"/>
+  		</action>  
+  		
+  		<action path="/camps/delete_end_cod" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.EndingCodesAction"
+  			name="createCampaignForm"
+        	scope="session"
+        	input="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"
+        	validate="true">
+			<forward name="show_pages" path="/WEB-INF/jsp/campaigns-admin/page/c_show_pages.jsp"/>
+  		</action>  
+  	 				
+  		<!-- NOT SORTED YET -->		
+  		<action path="/camps/delete_text" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteTextAction"
+  			name="scriptAdminForm"
+	       	scope="session">
+			<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/text/c_show_texts.jsp"/>
+  		</action>    		 
+  		  		
+  		<action path="/camps/delete_parameter" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.DeleteParameterAction"
+  			name="scriptAdminForm"
+	       	scope="session">
+			<forward name="ok" path="/WEB-INF/jsp/campaigns-admin/text-details/c_show_text_details.jsp"/>
+  		</action>    		 		 
+
+  		<!-- Reports -->
+  		<action path="/report/actions" 
+	  			type="com.avaya.pso.co.scriptAdmin.web.action.report.ReportsAction"
+	  			name="report_b"
+            	scope="session">
+			<forward name="menu" path="/WEB-INF/jsp/reports/menu/t_menu_list.jsp"/>
+			<forward name="campaign_calls" path="/WEB-INF/jsp/reports/t_campaign_calls.jsp"/>
+			<forward name="user_calls" path="/WEB-INF/jsp/reports/t_user_calls.jsp"/>
+		</action>    		  			
+  		
+	  	<action path="/report/CampaignByCategory"
+	      		type="com.avaya.pso.co.scriptAdmin.web.action.report.AccCampaignByCategory"
+	      		name="report_campaign"
+	      		attribute="report_campaign"
+	      		scope="session">
+	      <forward name="campaign" path="/WEB-INF/jsp/reports/t_campaign_category_calls.jsp" />
+	    </action> 
+
+	    <action path="/report/TotalCalls"
+	      		type="com.avaya.pso.co.scriptAdmin.web.action.report.AccTotalCalls"
+	      		name="report_total"
+	      		attribute="report_total"
+	      		scope="session">
+	      <forward name="campaign" path="/WEB-INF/jsp/reports/t_total_calls.jsp" />
+	    </action>
+
+   	    <action
+             attribute="report_historic_calls"
+             input="/WEB-INF/jsp/reports/t_historic_calls.jsp"
+             name="report_historic_calls"
+             path="/report/HistoricCalls"
+             scope="request"
+             type="com.avaya.pso.co.scriptAdmin.web.action.report.AccHistoricCalls">
+             <forward name="show" path="/WEB-INF/jsp/reports/t_historic_calls.jsp" />
+        </action>
+        
+      <action
+                attribute="report_result_question"
+                input="/WEB-INF/jsp/reports/t_result_question.jsp"
+                name="report_result_question"
+                path="/report/ResultQuestion"
+                scope="request"
+                type="com.avaya.pso.co.scriptAdmin.web.action.report.AccResultQuestion">
+                <forward name="show" path="/WEB-INF/jsp/reports/t_result_question.jsp" />
+                
+    </action>
+    
+     <action
+                attribute="report_historic_agents"
+                input="/WEB-INF/jsp/reports/t_historic_agents.jsp"
+                name="report_historic_agents"
+                path="/report/HistoricAgents"
+                scope="request"
+                type="com.avaya.pso.co.scriptAdmin.web.action.report.AccHistoricAgents">
+                <forward name="show" path="/WEB-INF/jsp/reports/t_historic_agents.jsp" />
+    </action>
+    
+    
+    <action
+                attribute="resultreport_question"
+                input="/WEB-INF/jsp/reports/t_resultreport_question.jsp"
+                name="resultreport_question"
+                path="/report/ResultReportQuestion"
+                scope="session"
+                type="com.avaya.pso.co.scriptAdmin.web.action.report.AccResultQuestion">
+                <forward name="show" path="/WEB-INF/jsp/reports/t_resultreport_question.jsp" />
+                
+    </action>
+
+        <action path="/report/DetailQuestions" 
+  			type="com.avaya.pso.co.scriptAdmin.web.action.report.AccDetailQuestions"
+  			name="report_detail_questions"
+           	scope="session">
+			<forward name="detail_questions" path="/WEB-INF/jsp/reports/t_detail_questions.jsp"/>
+		</action>
+
+	    <action path="/report/Questions"
+	      	  type="com.avaya.pso.co.scriptAdmin.web.action.report.AccQuestionsReport"
+	      	  name="report_questions"
+	      	  attribute="report_questions"
+	      	  scope="session">
+	      <forward name="campaign" path="/WEB-INF/jsp/reports/t_questions.jsp" />
+	    </action> 
+
+  		<!-- Security & Users -->  				
+  		<action path="/logout" 
+	  			type="com.avaya.pso.co.scriptAdmin.web.action.secure.LogoutAction"
+	  			name="scriptAdminForm"
+            	scope="session">
+    			<forward name="init" path="/index.html"/>
+		</action>    		  			
+
+  		<action path="/admin/show" 
+	  			type="com.avaya.pso.co.scriptAdmin.web.action.secure.AdminViewAction"
+	  			name="admin_b"
+            	scope="session"
+            	validate="false">
+            	
+    			<forward name="view" path="/WEB-INF/jsp/users-admin/t_view.jsp"/>
+  		</action>    		  				
+  		
+  		<action path="/admin/options" 
+	  			type="com.avaya.pso.co.scriptAdmin.web.action.secure.AdminOptionsAction"
+	  			name="admin_b"
+            	scope="session"
+            	input="/WEB-INF/jsp/users-admin/t_view.jsp"
+            	validate= "true">
+    			<forward name="edit_profile" path="/WEB-INF/jsp/users-admin/t_profile.jsp"/>
+    			<forward name="edit_roles" path="/WEB-INF/jsp/users-admin/t_roles.jsp"/>
+    			<forward name="remove_user" path="/WEB-INF/jsp/users-admin/t_view.jsp"/>
+    			<forward name="add_user" path="/WEB-INF/jsp/users-admin/t_view.jsp"/>
+    			<forward name="modify_user" path="/WEB-INF/jsp/users-admin/t_view.jsp"/>
+    			<forward name="change_roles" path="/WEB-INF/jsp/users-admin/t_roles.jsp"/>
+  		</action>    		  				
+  		
+  		<!-- MARIA CUELLAR -->
+  		
+  		<action path="/report/ResultQuestionFinal" type="com.avaya.pso.co.scriptAdmin.web.action.report.AccResultQuestionFinal" name="report_result_question" attribute="report_result_question" scope="session">
+		  <forward name="show" path="/WEB-INF/jsp/reports/t_result_question.jsp" /> 
+		  <forward name="res" path="/WEB-INF/jsp/reports/t_result_question_res.jsp" />
+		  <forward name="final" path="/WEB-INF/jsp/reports/t_result_question_final.jsp" /> 
+		</action>
+  		
+ 
+  	</action-mappings>
+  	
+	<message-resources
+    	key="MENSAJES_es"
+	    null="false"
+    	parameter="com.avaya.pso.co.scriptAdmin.web.ApplicationResources_es"/>
+	<message-resources
+    	key="MENSAJES_en"
+	    null="false"
+    	parameter="com.avaya.pso.co.scriptAdmin.web.ApplicationResources_en"/>
+  	<message-resources null="false" parameter="com.avaya.pso.co.scriptAdmin.web.ApplicationResources"/>
+  	
+  	<plug-in className="org.apache.struts.validator.ValidatorPlugIn">    
+    	<set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    	</plug-in>
+</struts-config>
+

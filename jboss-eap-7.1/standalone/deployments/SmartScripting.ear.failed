@@ -1,0 +1,2 @@
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.subunit.\"SmartScripting.ear\".\"Script.jar\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of subdeployment \"Script.jar\" of deployment \"SmartScripting.ear\"
+    Caused by: org.jboss.msc.service.ServiceNotFoundException: Service service jboss.ejb.default-resource-adapter-name-service not found"}}

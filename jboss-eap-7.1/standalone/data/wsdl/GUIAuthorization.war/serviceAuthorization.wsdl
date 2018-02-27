@@ -1,0 +1,958 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.authorization.security.gaudi.osi.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="serviceAuthorization" targetNamespace="http://ws.authorization.security.gaudi.osi.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.authorization.security.gaudi.osi.com/" targetNamespace="http://ws.authorization.security.gaudi.osi.com/" version="1.0">
+
+  <xs:complexType name="domain">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="shortName" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="role">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="domain" type="tns:domain"/>
+      <xs:element minOccurs="0" name="groupRole" type="tns:groupRole"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="groupRole">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="domain" type="tns:domain"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="permission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="domain" type="tns:domain"/>
+      <xs:element minOccurs="0" name="groupPermission" type="tns:groupPermission"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="groupPermission">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="domain" type="tns:domain"/>
+      <xs:element name="id" type="xs:long"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="user">
+    <xs:sequence>
+      <xs:element name="blocked" type="xs:int"/>
+      <xs:element minOccurs="0" name="description" type="xs:string"/>
+      <xs:element minOccurs="0" name="id" type="xs:string"/>
+      <xs:element minOccurs="0" name="lastName" type="xs:string"/>
+      <xs:element minOccurs="0" name="mail" type="xs:string"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType final="#all" name="domainArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:domain"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType final="#all" name="roleArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:role"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType final="#all" name="permissionArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:permission"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType final="#all" name="userArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:user"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType final="#all" name="groupRoleArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:groupRole"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType final="#all" name="groupPermissionArray">
+    <xs:sequence>
+      <xs:element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="tns:groupPermission"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getRolesResponse">
+    <wsdl:part name="return" type="tns:roleArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRoleByIdResponse">
+    <wsdl:part name="return" type="tns:role">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesNoAttach">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesByUserNameResponse">
+    <wsdl:part name="return" type="tns:roleArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteRole">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteFromPermissionRoleResponse">
+  </wsdl:message>
+  <wsdl:message name="deleteFromPermissionRole">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUserResponse">
+  </wsdl:message>
+  <wsdl:message name="getPermissionsUser">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersResponse">
+    <wsdl:part name="return" type="tns:userArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersByDomainResponse">
+    <wsdl:part name="return" type="tns:userArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="modify">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupPermissionsbyDomainResponse">
+    <wsdl:part name="return" type="tns:groupPermissionArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteDomainResponse">
+  </wsdl:message>
+  <wsdl:message name="getDomainResponse">
+    <wsdl:part name="return" type="tns:domain">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteRoleResponse">
+  </wsdl:message>
+  <wsdl:message name="getGroupPermissionResponse">
+    <wsdl:part name="return" type="tns:groupPermission">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersAdminDomainResponse">
+    <wsdl:part name="return" type="tns:userArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insert">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermNotAttachRole">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersAdminByDomainResponse">
+    <wsdl:part name="return" type="tns:userArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDomainsByAdministratorResponse">
+    <wsdl:part name="return" type="tns:domainArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesByUserName">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupRoleResponse">
+  </wsdl:message>
+  <wsdl:message name="getUsersByRol">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUserResponse">
+    <wsdl:part name="return" type="tns:user">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUser">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermissionsResponse">
+    <wsdl:part name="return" type="tns:permissionArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDomainsByAdminAndDomain">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupPermissionsbyDomain">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteFromUserRole">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDomainsResponse">
+    <wsdl:part name="return" type="tns:domainArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupRolesbyDomainResponse">
+    <wsdl:part name="return" type="tns:groupRoleArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesByDomainGrpRoleResponse">
+    <wsdl:part name="return" type="tns:roleArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupRole">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDomains">
+  </wsdl:message>
+  <wsdl:message name="getDomainsByAdministrator">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesByDomainResponse">
+    <wsdl:part name="return" type="tns:roleArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermissionsRole">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermissions">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePermission">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersByRolResponse">
+    <wsdl:part name="return" type="tns:userArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersAdminByDomain">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteUser">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersWithoutRole">
+  </wsdl:message>
+  <wsdl:message name="getGroupRolesbyDomain">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupRoleResponse">
+    <wsdl:part name="return" type="tns:groupRole">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupPermission">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDomain">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRoleById">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesByDomainGrpRole">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermissionsRoleResponse">
+    <wsdl:part name="return" type="tns:permissionArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getDomainsByAdminAndDomainResponse">
+    <wsdl:part name="return" type="tns:domainArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermissionsUserResponse">
+    <wsdl:part name="return" type="tns:permissionArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getGroupPermission">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPermNotAttachRoleResponse">
+    <wsdl:part name="return" type="tns:permissionArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesByDomain">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="insertResponse">
+  </wsdl:message>
+  <wsdl:message name="getPermissionsByDomainGrpPermissResponse">
+    <wsdl:part name="return" type="tns:permissionArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRolesNoAttachResponse">
+    <wsdl:part name="return" type="tns:roleArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deletePermissionResponse">
+  </wsdl:message>
+  <wsdl:message name="getUsersAdminDomain">
+  </wsdl:message>
+  <wsdl:message name="modifyResponse">
+  </wsdl:message>
+  <wsdl:message name="getPermissionsByDomainGrpPermiss">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteFromAdministratorDomainResponse">
+  </wsdl:message>
+  <wsdl:message name="deleteFromAdministratorDomain">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsersByDomain">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupPermissionResponse">
+  </wsdl:message>
+  <wsdl:message name="getUsersWithoutRoleResponse">
+    <wsdl:part name="return" type="tns:userArray">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRoles">
+    <wsdl:part name="arg0" type="xsd:string">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteFromUserRoleResponse">
+  </wsdl:message>
+  <wsdl:message name="deleteDomain">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteGroupRole">
+    <wsdl:part name="arg0" type="xsd:anyType">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsers">
+    <wsdl:part name="arg0" type="xsd:long">
+    </wsdl:part>
+    <wsdl:part name="arg1" type="xsd:string">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IAuthorization">
+    <wsdl:operation name="getDomains">
+      <wsdl:input message="tns:getDomains" name="getDomains">
+    </wsdl:input>
+      <wsdl:output message="tns:getDomainsResponse" name="getDomainsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesNoAttach">
+      <wsdl:input message="tns:getRolesNoAttach" name="getRolesNoAttach">
+    </wsdl:input>
+      <wsdl:output message="tns:getRolesNoAttachResponse" name="getRolesNoAttachResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDomainsByAdministrator">
+      <wsdl:input message="tns:getDomainsByAdministrator" name="getDomainsByAdministrator">
+    </wsdl:input>
+      <wsdl:output message="tns:getDomainsByAdministratorResponse" name="getDomainsByAdministratorResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRole">
+      <wsdl:input message="tns:deleteRole" name="deleteRole">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteRoleResponse" name="deleteRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionsRole">
+      <wsdl:input message="tns:getPermissionsRole" name="getPermissionsRole">
+    </wsdl:input>
+      <wsdl:output message="tns:getPermissionsRoleResponse" name="getPermissionsRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissions">
+      <wsdl:input message="tns:getPermissions" name="getPermissions">
+    </wsdl:input>
+      <wsdl:output message="tns:getPermissionsResponse" name="getPermissionsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePermission">
+      <wsdl:input message="tns:deletePermission" name="deletePermission">
+    </wsdl:input>
+      <wsdl:output message="tns:deletePermissionResponse" name="deletePermissionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersAdminByDomain">
+      <wsdl:input message="tns:getUsersAdminByDomain" name="getUsersAdminByDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsersAdminByDomainResponse" name="getUsersAdminByDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFromPermissionRole">
+      <wsdl:input message="tns:deleteFromPermissionRole" name="deleteFromPermissionRole">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteFromPermissionRoleResponse" name="deleteFromPermissionRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <wsdl:input message="tns:deleteUser" name="deleteUser">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteUserResponse" name="deleteUserResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersWithoutRole">
+      <wsdl:input message="tns:getUsersWithoutRole" name="getUsersWithoutRole">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsersWithoutRoleResponse" name="getUsersWithoutRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupRolesbyDomain">
+      <wsdl:input message="tns:getGroupRolesbyDomain" name="getGroupRolesbyDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getGroupRolesbyDomainResponse" name="getGroupRolesbyDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionsUser">
+      <wsdl:input message="tns:getPermissionsUser" name="getPermissionsUser">
+    </wsdl:input>
+      <wsdl:output message="tns:getPermissionsUserResponse" name="getPermissionsUserResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroupPermission">
+      <wsdl:input message="tns:deleteGroupPermission" name="deleteGroupPermission">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteGroupPermissionResponse" name="deleteGroupPermissionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modify">
+      <wsdl:input message="tns:modify" name="modify">
+    </wsdl:input>
+      <wsdl:output message="tns:modifyResponse" name="modifyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDomain">
+      <wsdl:input message="tns:getDomain" name="getDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getDomainResponse" name="getDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleById">
+      <wsdl:input message="tns:getRoleById" name="getRoleById">
+    </wsdl:input>
+      <wsdl:output message="tns:getRoleByIdResponse" name="getRoleByIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByDomainGrpRole">
+      <wsdl:input message="tns:getRolesByDomainGrpRole" name="getRolesByDomainGrpRole">
+    </wsdl:input>
+      <wsdl:output message="tns:getRolesByDomainGrpRoleResponse" name="getRolesByDomainGrpRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupPermission">
+      <wsdl:input message="tns:getGroupPermission" name="getGroupPermission">
+    </wsdl:input>
+      <wsdl:output message="tns:getGroupPermissionResponse" name="getGroupPermissionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert">
+      <wsdl:input message="tns:insert" name="insert">
+    </wsdl:input>
+      <wsdl:output message="tns:insertResponse" name="insertResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByDomain">
+      <wsdl:input message="tns:getRolesByDomain" name="getRolesByDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getRolesByDomainResponse" name="getRolesByDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermNotAttachRole">
+      <wsdl:input message="tns:getPermNotAttachRole" name="getPermNotAttachRole">
+    </wsdl:input>
+      <wsdl:output message="tns:getPermNotAttachRoleResponse" name="getPermNotAttachRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByUserName">
+      <wsdl:input message="tns:getRolesByUserName" name="getRolesByUserName">
+    </wsdl:input>
+      <wsdl:output message="tns:getRolesByUserNameResponse" name="getRolesByUserNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersByRol">
+      <wsdl:input message="tns:getUsersByRol" name="getUsersByRol">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsersByRolResponse" name="getUsersByRolResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersAdminDomain">
+      <wsdl:input message="tns:getUsersAdminDomain" name="getUsersAdminDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsersAdminDomainResponse" name="getUsersAdminDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <wsdl:input message="tns:getUser" name="getUser">
+    </wsdl:input>
+      <wsdl:output message="tns:getUserResponse" name="getUserResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionsByDomainGrpPermiss">
+      <wsdl:input message="tns:getPermissionsByDomainGrpPermiss" name="getPermissionsByDomainGrpPermiss">
+    </wsdl:input>
+      <wsdl:output message="tns:getPermissionsByDomainGrpPermissResponse" name="getPermissionsByDomainGrpPermissResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFromAdministratorDomain">
+      <wsdl:input message="tns:deleteFromAdministratorDomain" name="deleteFromAdministratorDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteFromAdministratorDomainResponse" name="deleteFromAdministratorDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDomainsByAdminAndDomain">
+      <wsdl:input message="tns:getDomainsByAdminAndDomain" name="getDomainsByAdminAndDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getDomainsByAdminAndDomainResponse" name="getDomainsByAdminAndDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupPermissionsbyDomain">
+      <wsdl:input message="tns:getGroupPermissionsbyDomain" name="getGroupPermissionsbyDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getGroupPermissionsbyDomainResponse" name="getGroupPermissionsbyDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersByDomain">
+      <wsdl:input message="tns:getUsersByDomain" name="getUsersByDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsersByDomainResponse" name="getUsersByDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFromUserRole">
+      <wsdl:input message="tns:deleteFromUserRole" name="deleteFromUserRole">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteFromUserRoleResponse" name="deleteFromUserRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoles">
+      <wsdl:input message="tns:getRoles" name="getRoles">
+    </wsdl:input>
+      <wsdl:output message="tns:getRolesResponse" name="getRolesResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDomain">
+      <wsdl:input message="tns:deleteDomain" name="deleteDomain">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteDomainResponse" name="deleteDomainResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroupRole">
+      <wsdl:input message="tns:deleteGroupRole" name="deleteGroupRole">
+    </wsdl:input>
+      <wsdl:output message="tns:deleteGroupRoleResponse" name="deleteGroupRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupRole">
+      <wsdl:input message="tns:getGroupRole" name="getGroupRole">
+    </wsdl:input>
+      <wsdl:output message="tns:getGroupRoleResponse" name="getGroupRoleResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <wsdl:input message="tns:getUsers" name="getUsers">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsersResponse" name="getUsersResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="serviceAuthorizationSoapBinding" type="tns:IAuthorization">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getDomains">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getDomains">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDomainsResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesNoAttach">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getRolesNoAttach">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRolesNoAttachResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDomainsByAdministrator">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getDomainsByAdministrator">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDomainsByAdministratorResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionsRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getPermissionsRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPermissionsRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissions">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getPermissions">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPermissionsResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deletePermission">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deletePermission">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deletePermissionResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersAdminByDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUsersAdminByDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersAdminByDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFromPermissionRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteFromPermissionRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteFromPermissionRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteUser">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteUserResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersWithoutRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUsersWithoutRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersWithoutRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupRolesbyDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getGroupRolesbyDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupRolesbyDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionsUser">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getPermissionsUser">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPermissionsUserResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroupPermission">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteGroupPermission">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteGroupPermissionResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modify">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="modify">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modifyResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoleById">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getRoleById">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRoleByIdResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByDomainGrpRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getRolesByDomainGrpRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRolesByDomainGrpRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupPermission">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getGroupPermission">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupPermissionResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insert">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="insert">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="insertResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getRolesByDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRolesByDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermNotAttachRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getPermNotAttachRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPermNotAttachRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRolesByUserName">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getRolesByUserName">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRolesByUserNameResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersByRol">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUsersByRol">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersByRolResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersAdminDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUsersAdminDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersAdminDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUser">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUser">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUserResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionsByDomainGrpPermiss">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getPermissionsByDomainGrpPermiss">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPermissionsByDomainGrpPermissResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFromAdministratorDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteFromAdministratorDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteFromAdministratorDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDomainsByAdminAndDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getDomainsByAdminAndDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getDomainsByAdminAndDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupPermissionsbyDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getGroupPermissionsbyDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupPermissionsbyDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsersByDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUsersByDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersByDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFromUserRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteFromUserRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteFromUserRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoles">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getRoles">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRolesResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteDomain">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteDomain">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteDomainResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteGroupRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="deleteGroupRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteGroupRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getGroupRole">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getGroupRole">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getGroupRoleResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getUsers">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsersResponse">
+        <soap:body namespace="http://ws.authorization.security.gaudi.osi.com/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="serviceAuthorization">
+    <wsdl:port binding="tns:serviceAuthorizationSoapBinding" name="portAuthorization">
+      <soap:address location="http://localhost:8280/GUIAuthorization/serviceAuthorization/Authorization"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

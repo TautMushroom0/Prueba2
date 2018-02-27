@@ -1,0 +1,20 @@
+2018-02-06 16:47:59,443 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 127) WFLYUT0022: Unregistered web context: '/Prueba' from server 'default-server'
+2018-02-06 16:47:59,458 INFO  [org.jboss.as.webservices] (MSC service thread 1-6) WFLYWS0004: Stopping service jboss.ws.endpoint."PruebaEAR.ear"."Prueba.war".Hello
+2018-02-06 16:47:59,477 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0208: Stopped subdeployment (runtime-name: Prueba.war) in 35ms
+2018-02-06 16:47:59,479 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment PruebaEAR.ear (runtime-name: PruebaEAR.ear) in 37ms
+2018-02-06 16:47:59,481 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "PruebaEAR.ear" (runtime-name: "PruebaEAR.ear")
+2018-02-06 16:47:59,500 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "Prueba.war")
+2018-02-06 16:47:59,634 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-1) JBWS024061: Adding service endpoint metadata: id=Hello
+ address=http://localhost:8080/Prueba/Hello
+ implementor=com.skillnet.Hello
+ serviceName={http://skillnet.com/}HelloService
+ portName={http://skillnet.com/}HelloPort
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-06 16:47:59,714 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-1) Creating Service {http://skillnet.com/}HelloService from class com.skillnet.Hello
+2018-02-06 16:47:59,745 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-1) Setting the server's publish address to be http://localhost:8080/Prueba/Hello
+2018-02-06 16:47:59,749 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-1) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/PruebaEAR.ear/Prueba.war/HelloService.wsdl
+2018-02-06 16:47:59,765 INFO  [org.jboss.as.webservices] (MSC service thread 1-2) WFLYWS0003: Starting service jboss.ws.endpoint."PruebaEAR.ear"."Prueba.war".Hello
+2018-02-06 16:47:59,789 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 128) WFLYUT0021: Registered web context: '/Prueba' for server 'default-server'
+2018-02-06 16:47:59,804 INFO  [org.jboss.as.server] (External Management Request Threads -- 2) WFLYSRV0016: Replaced deployment "PruebaEAR.ear" with deployment "PruebaEAR.ear"

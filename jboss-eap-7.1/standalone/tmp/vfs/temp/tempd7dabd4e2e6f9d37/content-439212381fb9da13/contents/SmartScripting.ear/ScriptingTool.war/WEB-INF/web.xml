@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  
+	<servlet>
+	   <servlet-name>Cache</servlet-name>
+	   <servlet-class>com.avaya.pso.co.script.web.servlets.CacheServlet</servlet-class>
+	   <load-on-startup>0</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+	   <servlet-name>Cache</servlet-name>
+	   <url-pattern>/Cache</url-pattern>
+	</servlet-mapping>
+  
+  <security-constraint>
+    <web-resource-collection>
+      <web-resource-name>no_access</web-resource-name>
+      <url-pattern>*.jsp</url-pattern>
+    </web-resource-collection>
+    <auth-constraint/>
+  </security-constraint>
+  
+   
+  <listener>
+    <listener-class>
+     com.avaya.pso.co.script.web.listeners.MyContextListener
+    </listener-class>
+  </listener>
+  
+  <session-config>
+      <session-timeout>120</session-timeout>
+  </session-config>
+   
+  <listener>
+    <listener-class>
+     com.avaya.pso.co.script.web.listeners.MySessionListener
+    </listener-class>
+  </listener>
+<!--
+  <listener>
+    <listener-class>
+     com.avaya.pso.co.script.web.listeners.MyRequestListener
+    </listener-class>
+  </listener>
+  -->
+  <!-- 
+  <filter>
+     <filter-name>Medida del tiempo</filter-name>
+     <filter-class>com.avaya.pso.co.script.web.filters.UsersFilter</filter-class>
+  </filter>
+
+  <filter-mapping>
+     <filter-name>Medida del tiempo</filter-name>
+     <servlet-name>action</servlet-name>
+  </filter-mapping>
+  -->	
+
+</web-app>
+

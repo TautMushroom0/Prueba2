@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+  <data-sources />
+  <form-beans >
+    <form-bean name="FormOpenScript" type="com.avaya.pso.co.script.web.struts.FormOpenScript" />
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards />
+  <action-mappings >
+    <action
+      attribute="FormOpenScript"
+      name="FormOpenScript"
+      path="/OpenScript"
+      scope="request"
+      type="com.avaya.pso.co.script.web.struts.AccOpenScript">
+      <forward name="no_campaign" path="page.noCampaign" />
+      <forward name="Test" path="/jsp/Test.jsp" />
+      <forward name="mostrar" path="page.show" />
+      <forward name="error" path="page.error" />
+    </action>
+    <action
+      attribute="FormOpenScript"
+      name="FormOpenScript"
+      path="/OpenScriptMultib"
+      scope="request"
+      type="com.avaya.pso.co.script.web.struts.AccOpenScriptMultib">
+      <forward name="no_campaign" path="page.noCampaign" />
+      <forward name="Test" path="/jsp/Test.jsp" />
+      <forward name="mostrar" path="page.show" />
+      <forward name="error" path="page.error" />
+    </action>
+    <action
+      attribute="FormOpenScript"
+      input="/jsp/Show.jsp"
+      name="FormOpenScript"
+      path="/ShowScript"
+      scope="request"
+      type="com.avaya.pso.co.script.web.struts.AccShowScript">
+      <forward name="showScript" path="/jsp/Show.jsp" />
+    </action>
+    <action path="/CacheManagement" type="com.avaya.pso.co.script.web.struts.AccCacheManagement">
+      <forward name="cacheManagement" path="page.cacheManager" />
+    </action>
+    <action
+      path="/HistoricReport"
+      scope="request"
+      type="com.avaya.pso.co.script.web.struts.AccHistoricReport"
+      validate="false">
+      <forward name="historicReport" path="page.historicReport" />
+      <forward name="error" path="page.error" />
+    </action>
+     <action
+      path="/HistoricReportAgents"
+       scope="request"
+      type="com.avaya.pso.co.script.web.struts.AccHistoricRepAgents"
+      validate="false">
+      <forward name="historicReportAgent" path="page.historicReportAgents" />
+      <forward name="error" path="page.error" />
+    </action> 
+    <action
+      path="/PricesViewer"
+      scope="request"
+      type="com.avaya.pso.co.script.web.struts.AccPricesViewer"
+      validate="false">
+      <forward name="pricesViewer" path="page.pricesViewer" />
+      <forward name="error" path="page.error" />
+    </action>
+
+  </action-mappings>
+  
+
+  <message-resources
+    key="org.apache.struts.action.MESSAGE"
+    null="false"
+    parameter="com.avaya.pso.co.script.web.struts.ApplicationResources" />
+  <message-resources 
+    key="MESSAGE_ES"
+    null="false"
+    parameter="com.avaya.pso.co.script.web.struts.ApplicationResources_es" />
+  <message-resources
+    key="MESSAGE_EN"
+    null="false"
+    parameter="com.avaya.pso.co.script.web.struts.ApplicationResources_en" />
+    
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-parser-validate" value="true" />
+    <set-property property="moduleAware" value="true" />
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />
+  </plug-in>
+   
+</struts-config>
+

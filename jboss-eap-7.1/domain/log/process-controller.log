@@ -1,0 +1,57 @@
+2018-01-26 15:19:51,583 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.0.Final-redhat-1
+2018-01-26 15:19:51,834 INFO  [org.jboss.as.process.Host Controller.status] (main) WFLYPC0018: Starting process 'Host Controller'
+2018-01-26 15:24:51,521 INFO  [org.jboss.as.process.Server:server1.status] (ProcessController-threads - 4) WFLYPC0018: Starting process 'Server:server1'
+2018-01-26 15:24:53,323 INFO  [org.jboss.as.process.Server:server2.status] (ProcessController-threads - 4) WFLYPC0018: Starting process 'Server:server2'
+2018-01-26 15:24:55,892 INFO  [org.jboss.as.process.Server:server3.status] (ProcessController-threads - 4) WFLYPC0018: Starting process 'Server:server3'
+2018-01-26 15:24:58,721 INFO  [org.jboss.as.process.Server:server.status] (ProcessController-threads - 4) WFLYPC0018: Starting process 'Server:server'
+2018-01-30 14:17:08,069 INFO  [org.jboss.as.process.Server:Prueb1.status] (ProcessController-threads - 5) WFLYPC0018: Starting process 'Server:Prueb1'
+2018-01-30 14:21:39,287 INFO  [org.jboss.as.process.Server:Prueb1.status] (ProcessController-threads - 6) WFLYPC0019: Stopping process 'Server:Prueb1'
+2018-01-30 14:21:39,423 INFO  [org.jboss.as.process.Server:Prueb1.status] (reaper for Server:Prueb1) WFLYPC0011: Process 'Server:Prueb1' finished with an exit status of 0
+2018-01-30 14:21:47,437 INFO  [org.jboss.as.process.Server:Prueb1.status] (ProcessController-threads - 6) WFLYPC0018: Starting process 'Server:Prueb1'
+2018-02-21 09:49:09,071 INFO  [org.jboss.as.process.Server:server2.status] (reaper for Server:server2) WFLYPC0011: Process 'Server:server2' finished with an exit status of 137
+2018-02-21 11:54:46,136 INFO  [org.jboss.as.process.Server:Prueb1.status] (reaper for Server:Prueb1) WFLYPC0011: Process 'Server:Prueb1' finished with an exit status of 137
+2018-02-21 11:54:46,136 INFO  [org.jboss.as.process.Server:server3.status] (reaper for Server:server3) WFLYPC0011: Process 'Server:server3' finished with an exit status of 137
+2018-02-21 11:54:46,223 INFO  [org.jboss.as.process.Server:server1.status] (reaper for Server:server1) WFLYPC0011: Process 'Server:server1' finished with an exit status of 137
+2018-02-21 11:54:46,117 INFO  [org.jboss.as.process.Server:server.status] (reaper for Server:server) WFLYPC0011: Process 'Server:server' finished with an exit status of 137
+2018-02-21 11:54:46,317 ERROR [org.jboss.as.process.Server:server.status] (ProcessController-threads - 8) WFLYPC0008: Failed to send reconnect message to process 'Server:server' input stream: java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:315)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at org.jboss.as.process.stdin.BaseNCodecOutputStream.flush(BaseNCodecOutputStream.java:125)
+	at org.jboss.as.process.stdin.BaseNCodecOutputStream.flush(BaseNCodecOutputStream.java:137)
+	at org.jboss.as.process.stdin.Base64OutputStream.flush(Base64OutputStream.java:44)
+	at org.jboss.as.process.stdin.BaseNCodecOutputStream.close(BaseNCodecOutputStream.java:154)
+	at org.jboss.as.process.stdin.Base64OutputStream.close(Base64OutputStream.java:44)
+	at org.jboss.as.process.ManagedProcess.reconnect(ManagedProcess.java:173)
+	at org.jboss.as.process.ProcessController.sendReconnectProcess(ProcessController.java:369)
+	at org.jboss.as.process.ProcessControllerServerHandler$InitMessageHandler$ConnectedMessageHandler.handleMessage(ProcessControllerServerHandler.java:229)
+	at org.jboss.as.process.protocol.ConnectionImpl.safeHandleMessage(ConnectionImpl.java:267)
+	at org.jboss.as.process.protocol.ConnectionImpl$1$1.run(ConnectionImpl.java:221)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+
+2018-02-21 11:54:46,605 ERROR [org.jboss.as.process.Server:Prueb1.status] (ProcessController-threads - 8) WFLYPC0008: Failed to send reconnect message to process 'Server:Prueb1' input stream: java.io.IOException: Stream closed
+	at java.lang.ProcessBuilder$NullOutputStream.write(ProcessBuilder.java:433)
+	at java.io.OutputStream.write(OutputStream.java:116)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at org.jboss.as.process.stdin.BaseNCodecOutputStream.flush(BaseNCodecOutputStream.java:125)
+	at org.jboss.as.process.stdin.BaseNCodecOutputStream.flush(BaseNCodecOutputStream.java:137)
+	at org.jboss.as.process.stdin.Base64OutputStream.flush(Base64OutputStream.java:44)
+	at org.jboss.as.process.stdin.BaseNCodecOutputStream.close(BaseNCodecOutputStream.java:154)
+	at org.jboss.as.process.stdin.Base64OutputStream.close(Base64OutputStream.java:44)
+	at org.jboss.as.process.ManagedProcess.reconnect(ManagedProcess.java:173)
+	at org.jboss.as.process.ProcessController.sendReconnectProcess(ProcessController.java:369)
+	at org.jboss.as.process.ProcessControllerServerHandler$InitMessageHandler$ConnectedMessageHandler.handleMessage(ProcessControllerServerHandler.java:229)
+	at org.jboss.as.process.protocol.ConnectionImpl.safeHandleMessage(ConnectionImpl.java:267)
+	at org.jboss.as.process.protocol.ConnectionImpl$1$1.run(ConnectionImpl.java:221)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+

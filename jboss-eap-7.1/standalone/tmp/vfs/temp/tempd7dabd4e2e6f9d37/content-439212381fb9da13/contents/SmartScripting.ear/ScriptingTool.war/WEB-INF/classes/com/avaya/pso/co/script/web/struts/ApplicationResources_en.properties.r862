@@ -1,0 +1,62 @@
+# Resources for parameter 'com.avaya.pso.co.script.web.struts.ApplicationResources_en'
+# Project P/ScriptingTool
+error.message=There's a problem with the actual campaign:
+error.tittle=Problem with the campaign
+error.message.namingerror=Indispensable component not found:" {0} "
+error.message.remoteerror=Error in remote component:" {0} "
+error.message.backpage=Error attempting to return the page
+error.message.createerror=Error loading remote component:" {0} "
+error.message.exception=Fatal Error:" {0} "
+show.separator= 
+error.message.pageNotFound=Campaign " {0} " does not contain the page " {1} ". Option " {2} " go to this page so please check with the administrator.
+error.message.nocampaign=The Campaign ID was not found. You are not in a call right now.
+error.message.nolicense=There are no licences available
+error.message.campaignNotFound=The campaign with id "{0}" does not exist or is inactive.
+error.message.campaign.noInitialPage=Campaign with ID "{0}" does not have an initial page\!\! 
+error.message.callfinished=The call is ended. Please close the browser window.
+error.message.nextPageNotFound=Next page of option '{0}' not found. The error Option is in page '{1}' paragraph '{2}'.
+error.message.format.numeric=This answer must be numeric
+error.message.format.mandatory=Mandatory
+error.message.format.alpha=This answer must be alphabetical
+error.message.format.date=This answer must be a date
+error.message.format.length=This is not the length of the answer
+
+# Show.jsp
+label.alternative.observations=Show Observations
+name.button.observations=/Images/showObs_en.gif
+label.alternative.next=Next
+label.alternative.back=Back
+name.button.next=/Images/botonrojo_en.gif
+name.button.back=/Images/botonrojo_bk.gif
+label.alternative.sendObs=Send Observations
+name.button.sendObs=/Images/sendObs_en.gif
+message.updateObj.sucess=OBSERVATIONS SAVED SUCESSFULLY
+
+# Historic Report Messages 
+message.title.historicReport=HISTORIC REPORT BY ANI
+message.title.historicReportAgent=HISTORIC REPORT BY AGENT
+message.title.historicReportHeader=HISTORIC REPORT BY ANI
+message.title.historicReportIdRegExt=HISTORIC REPORT BY ID CLIENT
+label.report.historic.name=Name
+label.report.historic.ani=ANI
+label.report.historic.code=Finalization
+label.report.historic.initDate=Start
+label.report.historic.date=End
+label.report.historic.user=Agent
+laber.report.historic.preferences=Preferences
+label.report.historic.script=Campaign
+label.report.historic.observations=Observations
+label.report.historic.idUser=IdAgent
+error.report.historic.message=An error happen building the report: {0}
+label.report.historic.idScript=IdCampaign
+label.report.historicReportAgent.category=Category
+label.report.historicReportAgent.codfinal=Cod Final
+label.text.choose = -- Choose --
+label.common.consult = Consult
+
+# Prices Viewer
+label.prices.product=Product
+label.prices.ourPrice=Our Price
+label.prices.otherPrice=Other Price
+label.prices.ahMonth=At Month
+label.prices.ahYear=At Year

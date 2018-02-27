@@ -1,0 +1,507 @@
+2018-02-21 09:49:40,359 INFO  [org.jboss.as.repository] (External Management Request Threads -- 1) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/b3/5de3e413fe123504852fc9afbc45c3d9fc2b69/content
+2018-02-21 09:49:40,362 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 09:49:40,950 ERROR [org.jboss.as.server] (External Management Request Threads -- 1) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: undefined
+2018-02-21 09:49:41,015 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 64ms
+2018-02-21 09:49:41,016 INFO  [org.jboss.as.controller] (External Management Request Threads -- 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service org.wildfly.undertow.listener.https: Address already in use /172.18.48.29:8643
+      service org.wildfly.undertow.listener.default: Address already in use /172.18.48.29:8280
+
+2018-02-21 09:49:43,717 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 33) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/03/eec44287a9e37342b4f0a80243b507a35d7003 is obsolete and will be removed
+2018-02-21 09:49:43,719 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 33) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/03/eec44287a9e37342b4f0a80243b507a35d7003/content
+2018-02-21 09:50:19,879 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested via an OS signal
+2018-02-21 09:50:19,894 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2018-02-21 09:50:19,916 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0208: Stopped subdeployment (runtime-name: Prueba.war) in 31ms
+2018-02-21 09:50:19,920 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2018-02-21 09:50:19,922 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0004: Undertow 1.4.18.Final-redhat-2 stopping
+2018-02-21 09:50:19,926 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment PruebaEAR.ear (runtime-name: PruebaEAR.ear) in 44ms
+2018-02-21 09:50:19,938 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2018-02-21 09:50:19,952 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) stopped in 67ms
+2018-02-21 09:50:56,577 INFO  [org.jboss.modules] (main) JBoss Modules version 1.6.0.Final-redhat-1
+2018-02-21 09:50:56,875 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.7.SP1-redhat-1
+2018-02-21 09:50:57,013 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) starting
+2018-02-21 09:50:57,014 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /opt/jboss-eap-7.1//jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /usr/java/jdk1.8.0_25/jre/lib/endorsed
+	java.ext.dirs = /usr/java/jdk1.8.0_25/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /usr/java/jdk1.8.0_25/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_25-b17
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_25
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.25-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /opt/jboss-eap-7.1
+	jboss.host.name = jon
+	jboss.modules.dir = /opt/jboss-eap-7.1/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = jon
+	jboss.qualified.host.name = jon.skillnet.local
+	jboss.server.base.dir = /opt/jboss-eap-7.1/standalone
+	jboss.server.config.dir = /opt/jboss-eap-7.1/standalone/configuration
+	jboss.server.data.dir = /opt/jboss-eap-7.1/standalone/data
+	jboss.server.deploy.dir = /opt/jboss-eap-7.1/standalone/data/content
+	jboss.server.log.dir = /opt/jboss-eap-7.1/standalone/log
+	jboss.server.name = jon
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /opt/jboss-eap-7.1/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/opt/jboss-eap-7.1//standalone/configuration/logging.properties
+	module.path = /opt/jboss-eap-7.1//modules
+	org.jboss.boot.log.file = /opt/jboss-eap-7.1//standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 3.10.0-514.el7.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /usr/java/jdk1.8.0_25/jre/lib/resources.jar:/usr/java/jdk1.8.0_25/jre/lib/rt.jar:/usr/java/jdk1.8.0_25/jre/lib/sunrsasign.jar:/usr/java/jdk1.8.0_25/jre/lib/jsse.jar:/usr/java/jdk1.8.0_25/jre/lib/jce.jar:/usr/java/jdk1.8.0_25/jre/lib/charsets.jar:/usr/java/jdk1.8.0_25/jre/lib/jfr.jar:/usr/java/jdk1.8.0_25/jre/classes
+	sun.boot.library.path = /usr/java/jdk1.8.0_25/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /opt/jboss-eap-7.1//jboss-modules.jar -mp /opt/jboss-eap-7.1//modules org.jboss.as.standalone -Djboss.home.dir=/opt/jboss-eap-7.1/ -Djboss.server.base.dir=/opt/jboss-eap-7.1//standalone -c standalone.xml
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /opt/jboss-eap-7.1
+	user.home = /home/jboss
+	user.language = en
+	user.name = jboss
+	user.timezone = America/New_York
+2018-02-21 09:50:57,014 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Standalone] -verbose:gc -Xloggc:/opt/jboss-eap-7.1//standalone/log/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseGCLogFileRotation -XX:NumberOfGCLogFiles=5 -XX:GCLogFileSize=3M -XX:-TraceClassUnloading -Xms1303m -Xmx1303m -XX:MetaspaceSize=96M -XX:MaxMetaspaceSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/opt/jboss-eap-7.1//standalone/log/server.log -Dlogging.configuration=file:/opt/jboss-eap-7.1//standalone/configuration/logging.properties 
+2018-02-21 09:50:58,293 INFO  [org.jboss.as.controller.management-deprecated] (Controller Boot Thread) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/core-service=management/management-interface=http-interface' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-02-21 09:50:58,316 INFO  [org.wildfly.security] (ServerService Thread Pool -- 19) ELY00001: WildFly Elytron version 1.1.7.Final-redhat-1
+2018-02-21 09:50:58,322 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 12) WFLYCTL0028: Attribute 'security-realm' in the resource at address '/subsystem=undertow/server=default-server/https-listener=https' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2018-02-21 09:50:58,399 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2018-02-21 09:50:58,413 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.5.4.Final-redhat-1
+2018-02-21 09:50:58,420 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.5.4.Final-redhat-1
+2018-02-21 09:50:58,473 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 42) WFLYCLINF0001: Activating Infinispan subsystem.
+2018-02-21 09:50:58,496 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 36) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.4)
+2018-02-21 09:50:58,498 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: The node-identifier attribute on the /subsystem=transactions is set to the default value. This is a danger for environments running multiple servers. Please make sure the attribute value is unique.
+2018-02-21 09:50:58,499 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2018-02-21 09:50:58,506 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2018-02-21 09:50:58,509 INFO  [org.jboss.as.jaxrs] (ServerService Thread Pool -- 43) WFLYRS0016: RESTEasy version 3.0.24.Final-redhat-1
+2018-02-21 09:50:58,526 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 5.0.5.Final-redhat-1
+2018-02-21 09:50:58,532 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=5.0.2.Final-redhat-1
+2018-02-21 09:50:58,554 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2018-02-21 09:50:58,560 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 41) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2018-02-21 09:50:58,618 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.4.18.Final-redhat-2 starting
+2018-02-21 09:50:58,671 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2018-02-21 09:50:58,684 INFO  [org.jboss.as.connector] (MSC service thread 1-8) WFLYJCA0009: Starting JCA Subsystem (WildFly/IronJacamar 1.4.6.Final-redhat-1)
+2018-02-21 09:50:58,685 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0018: Started Driver service with driver-name = h2
+2018-02-21 09:50:58,722 INFO  [org.jboss.as.naming] (MSC service thread 1-1) WFLYNAM0003: Starting Naming Service
+2018-02-21 09:50:58,723 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2018-02-21 09:50:58,816 INFO  [org.jboss.as.ejb3] (MSC service thread 1-5) WFLYEJB0482: Strict pool mdb-strict-max-pool is using a max instance size of 16 (per class), which is derived from the number of CPUs on this host.
+2018-02-21 09:50:58,817 INFO  [org.jboss.as.ejb3] (MSC service thread 1-7) WFLYEJB0481: Strict pool slsb-strict-max-pool is using a max instance size of 64 (per class), which is derived from thread worker pool sizing.
+2018-02-21 09:50:58,922 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path '/opt/jboss-eap-7.1/welcome-content' with options [directory-listing: 'false', follow-symlink: 'false', case-sensitive: 'true', safe-symlink-paths: '[]']
+2018-02-21 09:50:58,927 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0012: Started server default-server.
+2018-02-21 09:50:58,932 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2018-02-21 09:50:59,009 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on 172.18.48.29:8280
+2018-02-21 09:50:59,048 INFO  [org.jboss.as.ejb3] (MSC service thread 1-8) WFLYEJB0493: EJB subsystem suspension complete
+2018-02-21 09:50:59,145 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-1) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2018-02-21 09:50:59,164 INFO  [org.jboss.as.patching] (MSC service thread 1-7) WFLYPAT0050: JBoss EAP cumulative patch ID is: base, one-off patches include: none
+2018-02-21 09:50:59,188 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-2) WFLYDS0013: Started FileSystemDeploymentService for directory /opt/jboss-eap-7.1/standalone/deployments
+2018-02-21 09:50:59,197 WARN  [org.jboss.as.domain.management.security] (MSC service thread 1-7) WFLYDM0111: Keystore /opt/jboss-eap-7.1/standalone/configuration/application.keystore not found, it will be auto generated on first use with a self signed certificate for host localhost
+2018-02-21 09:50:59,214 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "PruebaEAR.ear" (runtime-name: "PruebaEAR.ear")
+2018-02-21 09:50:59,261 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTPS listener https listening on 172.18.48.29:8643
+2018-02-21 09:50:59,300 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0207: Starting subdeployment (runtime-name: "Prueba.war")
+2018-02-21 09:50:59,527 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBossWS 5.1.9.Final-redhat-1 (Apache CXF 3.1.12.redhat-1) 
+2018-02-21 09:51:00,122 INFO  [org.infinispan.factories.GlobalComponentRegistry] (MSC service thread 1-1) ISPN000128: Infinispan version: Infinispan 'Chakra' 8.2.8.Final-redhat-1
+2018-02-21 09:51:00,293 INFO  [org.jboss.ws.cxf.metadata] (MSC service thread 1-7) JBWS024061: Adding service endpoint metadata: id=Hello
+ address=http://localhost:8280/Prueba/Hello
+ implementor=com.skillnet.Hello
+ serviceName={http://skillnet.com/}HelloService
+ portName={http://skillnet.com/}HelloPort
+ annotationWsdlLocation=null
+ wsdlLocationOverride=null
+ mtomEnabled=false
+2018-02-21 09:51:00,444 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started client-mappings cache from ejb container
+2018-02-21 09:51:00,892 INFO  [org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean] (MSC service thread 1-7) Creating Service {http://skillnet.com/}HelloService from class com.skillnet.Hello
+2018-02-21 09:51:01,163 INFO  [org.apache.cxf.endpoint.ServerImpl] (MSC service thread 1-7) Setting the server's publish address to be http://localhost:8280/Prueba/Hello
+2018-02-21 09:51:01,218 INFO  [org.jboss.ws.cxf.deployment] (MSC service thread 1-7) JBWS024074: WSDL published to: file:/opt/jboss-eap-7.1/standalone/data/wsdl/PruebaEAR.ear/Prueba.war/HelloService.wsdl
+2018-02-21 09:51:01,264 INFO  [org.jboss.as.webservices] (MSC service thread 1-7) WFLYWS0003: Starting service jboss.ws.endpoint."PruebaEAR.ear"."Prueba.war".Hello
+2018-02-21 09:51:01,418 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 62) WFLYUT0021: Registered web context: '/Prueba' for server 'default-server'
+2018-02-21 09:51:01,431 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "PruebaEAR.ear" (runtime-name : "PruebaEAR.ear")
+2018-02-21 09:51:01,490 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0212: Resuming server
+2018-02-21 09:51:01,492 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://172.18.48.29:10190/management
+2018-02-21 09:51:01,493 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://172.18.48.29:10190
+2018-02-21 09:51:01,493 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: JBoss EAP 7.1.0.GA (WildFly Core 3.0.10.Final-redhat-1) started in 5285ms - Started 433 of 662 services (356 services are lazy, passive or on-demand)
+2018-02-21 09:56:43,081 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 09:56:43,742 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 09:56:43,746 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 1) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 09:56:43,748 ERROR [org.jboss.as.server] (External Management Request Threads -- 1) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 09:56:43,792 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 42ms
+2018-02-21 10:00:57,347 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 33) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/b3/5de3e413fe123504852fc9afbc45c3d9fc2b69 is obsolete and will be removed
+2018-02-21 10:00:57,351 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 33) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/b3/5de3e413fe123504852fc9afbc45c3d9fc2b69/content
+2018-02-21 10:03:24,654 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 10:03:28,157 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/b3/5de3e413fe123504852fc9afbc45c3d9fc2b69/content
+2018-02-21 10:03:28,160 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:03:28,611 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-1) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:03:28,612 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:03:28,654 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "GUIAuthorization.war" (runtime-name : "GUIAuthorization.war")
+2018-02-21 10:03:28,654 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-21 10:12:54,994 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 10:13:03,150 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/22/7fa5db3e75676f38e004c51b6070d814f4ebf7/content
+2018-02-21 10:13:03,180 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 27ms
+2018-02-21 10:13:03,182 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:13:03,660 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:13:03,661 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:13:03,680 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "GUIAuthorization.war" with deployment "GUIAuthorization.war"
+2018-02-21 10:13:03,681 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-21 10:13:03,682 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/b3/5de3e413fe123504852fc9afbc45c3d9fc2b69/content
+2018-02-21 10:13:43,028 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 27ms
+2018-02-21 10:13:43,042 INFO  [org.jboss.as.server] (External Management Request Threads -- 3) WFLYSRV0009: Undeployed "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:13:43,045 INFO  [org.jboss.as.repository] (External Management Request Threads -- 3) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/22/7fa5db3e75676f38e004c51b6070d814f4ebf7/content
+2018-02-21 10:14:05,030 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 10:14:05,887 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/22/7fa5db3e75676f38e004c51b6070d814f4ebf7/content
+2018-02-21 10:14:05,889 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:14:06,282 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:14:06,283 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:14:06,294 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "GUIAuthorization.war" (runtime-name : "GUIAuthorization.war")
+2018-02-21 10:14:06,295 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-21 10:14:45,049 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 10:14:48,149 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 14ms
+2018-02-21 10:14:48,152 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:14:48,573 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:14:48,575 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("full-replace-deployment") failed - address: ([]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:14:48,586 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "GUIAuthorization.war" with deployment "GUIAuthorization.war"
+2018-02-21 10:14:48,586 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-21 10:16:38,941 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 25ms
+2018-02-21 10:16:38,953 INFO  [org.jboss.as.server] (External Management Request Threads -- 5) WFLYSRV0009: Undeployed "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:16:38,955 INFO  [org.jboss.as.repository] (External Management Request Threads -- 5) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/22/7fa5db3e75676f38e004c51b6070d814f4ebf7/content
+2018-02-21 10:17:03,244 INFO  [org.jboss.as.repository] (External Management Request Threads -- 2) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/37/da71f05c0f8227109dfe31a9d49d57f02a21c4/content
+2018-02-21 10:17:03,247 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:17:03,625 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,3]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:17:03,626 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 2) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:17:03,627 ERROR [org.jboss.as.server] (External Management Request Threads -- 2) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:17:03,658 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 30ms
+2018-02-21 10:20:35,221 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 10:20:37,291 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:20:37,685 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-2) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,3]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:20:37,685 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 2) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:20:37,697 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "GUIAuthorization.war" (runtime-name : "GUIAuthorization.war")
+2018-02-21 10:20:37,697 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 2) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-21 10:23:08,518 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 16ms
+2018-02-21 10:23:08,528 INFO  [org.jboss.as.server] (External Management Request Threads -- 8) WFLYSRV0009: Undeployed "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:23:08,530 INFO  [org.jboss.as.repository] (External Management Request Threads -- 8) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/37/da71f05c0f8227109dfe31a9d49d57f02a21c4/content
+2018-02-21 10:27:45,388 INFO  [org.jboss.as.repository] (External Management Request Threads -- 5) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/8f/38ea96c3b2b9a159bb4ac146f24fb6862cb14c/content
+2018-02-21 10:27:45,390 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:27:45,818 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,3]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:27:45,819 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 5) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:27:45,819 ERROR [org.jboss.as.server] (External Management Request Threads -- 5) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:27:45,836 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 16ms
+2018-02-21 10:29:15,049 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 10:29:15,459 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-4) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,3]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 10:29:15,460 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 6) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:29:15,460 ERROR [org.jboss.as.server] (External Management Request Threads -- 6) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,3]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,3]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 10:29:15,474 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 13ms
+2018-02-21 10:35:57,355 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/8f/38ea96c3b2b9a159bb4ac146f24fb6862cb14c is obsolete and will be removed
+2018-02-21 10:35:57,359 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 1) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/8f/38ea96c3b2b9a159bb4ac146f24fb6862cb14c/content
+2018-02-21 11:25:11,357 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 2) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 11:25:21,559 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e/content
+2018-02-21 11:25:21,561 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 11:25:23,149 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-6) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 11:25:23,150 ERROR [org.jboss.as.controller.management-operation] (DeploymentScanner-threads - 1) WFLYCTL0013: Operation ("deploy") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 11:25:23,222 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "GUIAuthorization.war" (runtime-name : "GUIAuthorization.war")
+2018-02-21 11:25:23,222 INFO  [org.jboss.as.controller] (DeploymentScanner-threads - 1) WFLYCTL0183: Service status report
+WFLYCTL0186:   Services which failed to start:      service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+
+2018-02-21 11:26:59,540 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 28ms
+2018-02-21 11:26:59,550 INFO  [org.jboss.as.server] (External Management Request Threads -- 7) WFLYSRV0009: Undeployed "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 11:26:59,554 INFO  [org.jboss.as.repository] (External Management Request Threads -- 7) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e/content
+2018-02-21 11:27:18,265 INFO  [org.jboss.as.server.deployment.scanner] (DeploymentScanner-threads - 1) WFLYDS0010: Scan found incompletely copied file content for deployment /opt/jboss-eap-7.1/standalone/deployments/GUIAuthorization.war. Deployment changes will not be processed until all content is complete.
+2018-02-21 11:33:12,987 INFO  [org.jboss.as.repository] (External Management Request Threads -- 9) WFLYDR0001: Content added at location /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e/content
+2018-02-21 11:33:12,989 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "GUIAuthorization.war" (runtime-name: "GUIAuthorization.war")
+2018-02-21 11:33:14,847 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.deployment.unit."GUIAuthorization.war".PARSE: org.jboss.msc.service.StartException in service jboss.deployment.unit."GUIAuthorization.war".PARSE: WFLYSRV0153: Failed to process phase PARSE of deployment "GUIAuthorization.war"
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:172)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:2032)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1955)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor "/content/GUIAuthorization.war/WEB-INF/jboss-web.xml" at [7,5]
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:87)
+	at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:165)
+	... 5 more
+Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered
+	at org.jboss.metadata.parser.util.MetaDataElementParser.unexpectedElement(MetaDataElementParser.java:115)
+	at org.jboss.metadata.parser.jbossweb.JBossWebMetaDataParser.parse(JBossWebMetaDataParser.java:313)
+	at org.wildfly.extension.undertow.deployment.JBossWebParsingDeploymentProcessor.deploy(JBossWebParsingDeploymentProcessor.java:74)
+	... 6 more
+
+2018-02-21 11:33:14,847 ERROR [org.jboss.as.controller.management-operation] (External Management Request Threads -- 9) WFLYCTL0013: Operation ("add") failed - address: ([("deployment" => "GUIAuthorization.war")]) - failure description: {"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 11:33:14,848 ERROR [org.jboss.as.server] (External Management Request Threads -- 9) WFLYSRV0021: Deploy of deployment "GUIAuthorization.war" was rolled back with the following failure message: 
+{"WFLYCTL0080: Failed services" => {"jboss.deployment.unit.\"GUIAuthorization.war\".PARSE" => "WFLYSRV0153: Failed to process phase PARSE of deployment \"GUIAuthorization.war\"
+    Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYUT0027: Failed to parse XML descriptor \"/content/GUIAuthorization.war/WEB-INF/jboss-web.xml\" at [7,5]
+    Caused by: javax.xml.stream.XMLStreamException: ParseError at [row,col]:[7,5]
+Message: Unexpected element 'class-loading' encountered"}}
+2018-02-21 11:33:14,873 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-3) WFLYSRV0028: Stopped deployment GUIAuthorization.war (runtime-name: GUIAuthorization.war) in 25ms
+2018-02-21 11:45:57,368 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 66) WFLYDR0009: Content /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e is obsolete and will be removed
+2018-02-21 11:45:57,374 INFO  [org.jboss.as.repository] (ServerService Thread Pool -- 66) WFLYDR0002: Content removed from location /opt/jboss-eap-7.1/standalone/data/content/3e/f8800f534c1f7e5ad406f73676c2614ca7989e/content
